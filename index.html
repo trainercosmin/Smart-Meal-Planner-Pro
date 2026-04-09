@@ -1,148 +1,1041 @@
 <!doctype html>
 <html lang="ro">
-<head>
+ <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Smart Meal Planner Pro</title>
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&amp;family=Outfit:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+  <script src="/_sdk/element_sdk.js"></script>
   <style>
-    /* --- Stiluri existente păstrate --- */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html, body { height: 100%; width: 100%; }
-    body { font-family: 'Outfit', sans-serif; background: linear-gradient(135deg, #0f172a 0%, #1a1a2e 50%, #0f3a2e 100%); color: #e8ebf0; padding: 24px; overflow-x: hidden; position: relative; }
-    body::before { content: ''; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 20% 30%, rgba(16, 185, 129, 0.15) 0%, transparent 40%), radial-gradient(circle at 80% 70%, rgba(34, 197, 94, 0.1) 0%, transparent 50%); pointer-events: none; z-index: 0; }
-    .wrapper { max-width: 1100px; margin: 0 auto; background: linear-gradient(135deg, #0f172a 0%, #1a1f35 50%, #1a2e2a 100%); padding: 48px; border-radius: 28px; border: 1.5px solid rgba(16, 185, 129, 0.3); box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(16, 185, 129, 0.2), 0 0 40px rgba(16, 185, 129, 0.1); animation: slideUp 0.9s cubic-bezier(0.34, 1.56, 0.64, 1); position: relative; z-index: 1; }
-    @keyframes slideUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
-    h1 { text-align: center; font-family: 'Outfit', sans-serif; background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 8px; font-size: 2.8rem; font-weight: 800; letter-spacing: -1px; text-shadow: 0 0 30px rgba(16, 185, 129, 0.3); }
-    .subtitle { text-align: center; color: #a0d8b0; margin-bottom: 40px; font-size: 1rem; font-weight: 500; }
-    .grid-inputs { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; margin-bottom: 32px; }
-    .input-group { display: flex; flex-direction: column; animation: fadeInUp 0.6s ease-out forwards; opacity: 0; }
-    @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-    label { display: block; font-size: 0.75rem; font-weight: 700; margin-bottom: 8px; color: #9ca3af; text-transform: uppercase; letter-spacing: 1px; }
-    input, select { width: 100%; padding: 12px 14px; border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 10px; font-size: 0.95rem; font-family: 'Outfit', sans-serif; transition: all 0.3s ease; background: rgba(15, 23, 42, 0.6); color: #e8ebf0; }
-    input:focus, select:focus { border-color: #10b981; outline: none; box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15); background: rgba(15, 23, 42, 0.9); color: #10ff88; }
-    .btn-calc { background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%); color: white; border: none; padding: 16px; border-radius: 12px; width: 100%; font-size: 1.05rem; font-weight: 700; cursor: pointer; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; gap: 12px; position: relative; overflow: hidden; box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3); }
-    .spinner { width: 16px; height: 16px; border: 2px solid rgba(255, 255, 255, 0.2); border-top-color: white; border-radius: 50%; animation: spin 0.8s linear infinite; display: none; }
-    @keyframes spin { to { transform: rotate(360deg); } }
-    .spinner.active { display: block; }
-    #results-summary { margin-top: 32px; padding: 32px; border-radius: 16px; background: linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(6, 182, 212, 0.12) 100%); border: 1px solid rgba(16, 185, 129, 0.4); color: #e8ebf0; text-align: center; display: none; animation: scaleIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1); box-shadow: 0 0 30px rgba(16, 185, 129, 0.15); }
-    @keyframes scaleIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
-    .day-card { margin-top: 28px; background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(26, 46, 42, 0.8) 100%); border-radius: 18px; border: 1px solid rgba(16, 185, 129, 0.2); overflow: hidden; animation: slideUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; opacity: 0; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); transition: all 0.3s ease; }
-    .day-title { background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%); color: white; padding: 20px; font-weight: 800; text-align: center; font-size: 1.3rem; letter-spacing: 0.5px; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); }
-    .meal-row { padding: 24px; border-bottom: 1px solid rgba(16, 185, 129, 0.1); }
-    .meal-row:last-child { border-bottom: none; }
-    .meal-name { color: #10ff88; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
-    .meal-emoji { font-size: 1.6rem; }
-    .food-option { padding: 14px 16px; background: rgba(16, 185, 129, 0.08); border-radius: 10px; border-left: 3px solid #10b981; font-size: 0.95rem; font-weight: 600; color: #e8ebf0; transition: all 0.3s ease; display: flex; justify-content: space-between; align-items: center; }
-    .food-option:hover { background: rgba(16, 185, 129, 0.15); border-left-color: #06b6d4; transform: translateX(6px); box-shadow: 0 0 15px rgba(16, 185, 129, 0.2); }
-    .food-text { flex: 1; font-size: 0.9rem; }
-    .food-kcal { background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%); color: white; padding: 5px 12px; border-radius: 8px; font-size: 0.8rem; font-weight: 700; white-space: nowrap; margin-left: 12px; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3); }
-    .tooltip { display: none; position: absolute; bottom: 100%; left: 0; background: linear-gradient(135deg, rgba(15, 23, 42, 0.98) 0%, rgba(26, 46, 42, 0.98) 100%); border: 1px solid rgba(16, 185, 129, 0.6); border-radius: 10px; padding: 14px; font-size: 0.85rem; color: #e8ebf0; z-index: 1000; min-width: 280px; max-width: 320px; margin-bottom: 8px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); line-height: 1.5; font-weight: 500; animation: popIn 0.2s ease-out; }
-    .info-btn:hover .tooltip { display: block; }
-  </style>
-</head>
-<body>
-  <div class="wrapper">
-    <h1 id="app-title">Smart Meal Planner Pro</h1>
-    <p class="subtitle">Planul nutrițional personalizat în 60 de secunde</p>
-    <div class="grid-inputs">
-      <!-- Inputuri aici (sex, greutate, înălțime, vârstă, activitate, mese, obiectiv) -->
-      <div class="input-group"><label for="sex">Sex</label><select id="sex"><option value="m">Masculin</option><option value="f">Feminin</option></select></div>
-      <div class="input-group"><label for="w">Greutate (kg)</label><input type="number" id="w" value="75" min="30" max="200"></div>
-      <div class="input-group"><label for="h">Înălțime (cm)</label><input type="number" id="h" value="180" min="140" max="230"></div>
-      <div class="input-group"><label for="age">Vârstă</label><input type="number" id="age" value="30" min="15" max="100"></div>
-      <div class="input-group"><label for="act">Activitate</label><select id="act"><option value="1.2">Sedentar</option><option value="1.375">Ușor Activ</option><option value="1.55">Moderat</option><option value="1.725">Intens</option></select></div>
-      <div class="input-group"><label for="mCount">Nr. Mese</label><select id="mCount"><option value="3">3 Mese</option><option value="4">4 Mese</option><option value="5">5 Mese</option></select></div>
-      <div class="input-group"><label for="goal">Obiectiv</label><select id="goal"><option value="loss">📉 Scădere Greutate</option><option value="maintain">➡️ Menținere</option><option value="muscle">📈 Masă Musculară</option></select></div>
-    </div>
-    <div class="allergy-section">
-      <label>⚠️ Excludere Alergeni:</label>
-      <div class="allergy-grid" id="allergens">
-        <label class="check-item"><input type="checkbox" value="lactoza"> Lactoză</label>
-        <label class="check-item"><input type="checkbox" value="gluten"> Gluten</label>
-        <label class="check-item"><input type="checkbox" value="ou"> Ouă</label>
-        <label class="check-item"><input type="checkbox" value="nuci"> Nuci</label>
-        <label class="check-item"><input type="checkbox" value="peste"> Pește</label>
-        <label class="check-item"><input type="checkbox" value="soia"> Soia</label>
-      </div>
-    </div>
-    <button class="btn-calc" onclick="generate()" id="calc-btn">
-      <span class="spinner" id="spinner"></span>
-      <span id="btn-text">CALCULEAZĂ PLANUL DE MASĂ</span>
-    </button>
-    <div id="results-summary"></div>
-    <div id="plan-container"></div>
-  </div>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #1a1a2e 50%, #0f3a2e 100%);
+      color: #e8ebf0;
+      padding: 24px;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 20% 30%, rgba(16, 185, 129, 0.15) 0%, transparent 40%),
+                  radial-gradient(circle at 80% 70%, rgba(34, 197, 94, 0.1) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .wrapper {
+      max-width: 1100px;
+      margin: 0 auto;
+      background: linear-gradient(135deg, #0f172a 0%, #1a1f35 50%, #1a2e2a 100%);
+      padding: 48px;
+      border-radius: 28px;
+      border: 1.5px solid rgba(16, 185, 129, 0.3);
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6),
+                  inset 0 1px 0 rgba(16, 185, 129, 0.2),
+                  0 0 40px rgba(16, 185, 129, 0.1);
+      animation: slideUp 0.9s cubic-bezier(0.34, 1.56, 0.64, 1);
+      position: relative;
+      z-index: 1;
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      text-align: center;
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+      font-size: 2.8rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+      text-shadow: 0 0 30px rgba(16, 185, 129, 0.3);
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #a0d8b0;
+      margin-bottom: 40px;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .grid-inputs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      animation: fadeInUp 0.6s ease-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .input-group:nth-child(1) { animation-delay: 0.1s; }
+    .input-group:nth-child(2) { animation-delay: 0.15s; }
+    .input-group:nth-child(3) { animation-delay: 0.2s; }
+    .input-group:nth-child(4) { animation-delay: 0.25s; }
+    .input-group:nth-child(5) { animation-delay: 0.3s; }
+    .input-group:nth-child(6) { animation-delay: 0.35s; }
+
+    label {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #9ca3af;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 10px;
+      font-size: 0.95rem;
+      font-family: 'Outfit', sans-serif;
+      transition: all 0.3s ease;
+      background: rgba(15, 23, 42, 0.6);
+      color: #e8ebf0;
+    }
+
+    input::placeholder, select {
+      color: #6b9b8a;
+    }
+
+    input:focus, select:focus {
+      border-color: #10b981;
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+      background: rgba(15, 23, 42, 0.9);
+      color: #10ff88;
+    }
+
+    input.error {
+      border-color: #ef4444;
+      background: rgba(239, 68, 68, 0.05);
+    }
+
+    .error-text {
+      font-size: 0.7rem;
+      color: #f87171;
+      margin-top: 4px;
+      display: none;
+      animation: shake 0.3s ease;
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-5px); }
+      75% { transform: translateX(5px); }
+    }
+
+    .allergy-section {
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(6, 182, 212, 0.08) 100%);
+      padding: 24px;
+      border-radius: 16px;
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      margin-bottom: 28px;
+      animation: slideUp 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) 0.4s forwards;
+      opacity: 0;
+    }
+
+    .allergy-section > label {
+      color: #10ff88;
+      margin-bottom: 14px;
+      display: block;
+      font-weight: 700;
+    }
+
+    .allergy-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      gap: 10px;
+    }
+
+    .check-item {
+      display: flex;
+      align-items: center;
+      font-size: 0.9rem;
+      cursor: pointer;
+      font-weight: 600;
+      padding: 10px 12px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+    }
+
+    .check-item:hover {
+      background: rgba(16, 185, 129, 0.18);
+      border-color: rgba(16, 185, 129, 0.6);
+      transform: translateX(4px);
+      box-shadow: 0 0 15px rgba(16, 185, 129, 0.2);
+    }
+
+    .check-item input {
+      width: 18px;
+      height: 18px;
+      margin-right: 8px;
+      cursor: pointer;
+      accent-color: #10b981;
+    }
+
+    .btn-calc {
+      background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+      color: white;
+      border: none;
+      padding: 16px;
+      border-radius: 12px;
+      width: 100%;
+      font-size: 1.05rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-family: 'Outfit', sans-serif;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
+    }
+
+    .btn-calc::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.25);
+      transition: left 0.4s ease;
+    }
+
+    .btn-calc:hover:not(:disabled)::before {
+      left: 100%;
+    }
+
+    .btn-calc:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 20px 50px rgba(16, 185, 129, 0.5);
+    }
+
+    .btn-calc:active:not(:disabled) {
+      transform: translateY(0);
+    }
+
+    .btn-calc:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .spinner {
+      width: 16px;
+      height: 16px;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-top-color: white;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      display: none;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .spinner.active {
+      display: block;
+    }
+
+    #results-summary {
+      margin-top: 32px;
+      padding: 32px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(6, 182, 212, 0.12) 100%);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      color: #e8ebf0;
+      text-align: center;
+      display: none;
+      animation: scaleIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+      box-shadow: 0 0 30px rgba(16, 185, 129, 0.15);
+    }
+
+    @keyframes scaleIn {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    #results-summary h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.4rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    #results-summary p {
+      font-size: 0.95rem;
+      color: #a0d8b0;
+    }
+
+    .day-card {
+      margin-top: 28px;
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(26, 46, 42, 0.8) 100%);
+      border-radius: 18px;
+      border: 1px solid rgba(16, 185, 129, 0.2);
+      overflow: hidden;
+      animation: slideUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+      opacity: 0;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .day-card:hover {
+      border-color: rgba(16, 185, 129, 0.6);
+      box-shadow: 0 20px 50px rgba(16, 185, 129, 0.25);
+      transform: translateY(-4px);
+    }
+
+    .day-title {
+      background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+      color: white;
+      padding: 20px;
+      font-weight: 800;
+      text-align: center;
+      font-size: 1.3rem;
+      letter-spacing: 0.5px;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .meal-row {
+      padding: 24px;
+      border-bottom: 1px solid rgba(16, 185, 129, 0.1);
+    }
+
+    .meal-row:last-child {
+      border-bottom: none;
+    }
+
+    .meal-name {
+      color: #10ff88;
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .meal-emoji {
+      font-size: 1.6rem;
+    }
+
+    .food-option {
+      padding: 14px 16px;
+      background: rgba(16, 185, 129, 0.08);
+      border-radius: 10px;
+      border-left: 3px solid #10b981;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #e8ebf0;
+      transition: all 0.3s ease;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .food-option:hover {
+      background: rgba(16, 185, 129, 0.15);
+      border-left-color: #06b6d4;
+      transform: translateX(6px);
+      box-shadow: 0 0 15px rgba(16, 185, 129, 0.2);
+    }
+
+    .food-text {
+      flex: 1;
+      font-size: 0.9rem;
+    }
+
+    .food-kcal {
+      background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+      color: white;
+      padding: 5px 12px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      white-space: nowrap;
+      margin-left: 12px;
+      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+    }
+
+    .info-btn {
+      background: rgba(16, 185, 129, 0.2);
+      border: 1px solid rgba(16, 185, 129, 0.5);
+      color: #10ff88;
+      padding: 4px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.75rem;
+      font-weight: 700;
+      transition: all 0.2s ease;
+      margin-left: 8px;
+      position: relative;
+    }
+
+    .info-btn:hover {
+      background: rgba(16, 185, 129, 0.4);
+      border-color: #10ff88;
+      box-shadow: 0 0 10px rgba(16, 185, 129, 0.4);
+    }
+
+    .tooltip {
+      display: none;
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.98) 0%, rgba(26, 46, 42, 0.98) 100%);
+      border: 1px solid rgba(16, 185, 129, 0.6);
+      border-radius: 10px;
+      padding: 14px;
+      font-size: 0.85rem;
+      color: #e8ebf0;
+      z-index: 1000;
+      min-width: 280px;
+      max-width: 320px;
+      margin-bottom: 8px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      line-height: 1.5;
+      font-weight: 500;
+      animation: popIn 0.2s ease-out;
+    }
+
+    @keyframes popIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px) scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .tooltip::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 12px;
+      width: 8px;
+      height: 8px;
+      background: rgba(16, 185, 129, 0.6);
+      border-radius: 2px;
+      transform: rotate(45deg);
+    }
+
+    .info-btn:hover .tooltip {
+      display: block;
+    }
+
+    .or-divider {
+      text-align: center;
+      margin: 12px 0;
+      font-weight: 700;
+      color: #4b7a6b;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+    }
+
+    .no-safe {
+      color: #f87171;
+      font-weight: 600;
+      padding: 14px;
+      background: rgba(239, 68, 68, 0.05);
+      border-radius: 10px;
+      border-left: 3px solid #ef4444;
+      font-size: 0.9rem;
+    }
+
+    .day-card:nth-child(1) { animation-delay: 0.1s; }
+    .day-card:nth-child(2) { animation-delay: 0.2s; }
+    .day-card:nth-child(3) { animation-delay: 0.3s; }
+    .day-card:nth-child(4) { animation-delay: 0.4s; }
+    .day-card:nth-child(5) { animation-delay: 0.5s; }
+    .day-card:nth-child(6) { animation-delay: 0.6s; }
+    .day-card:nth-child(7) { animation-delay: 0.7s; }
+
+    @media (max-width: 768px) {
+      .wrapper {
+        padding: 28px;
+        border-radius: 16px;
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 6px;
+      }
+
+      .grid-inputs {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        gap: 12px;
+      }
+
+      .btn-calc {
+        font-size: 0.95rem;
+        padding: 14px;
+      }
+
+      .day-title {
+        font-size: 1.1rem;
+        padding: 16px;
+      }
+
+      .meal-row {
+        padding: 18px;
+      }
+
+      .food-option {
+        font-size: 0.85rem;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .food-kcal {
+        margin-left: 0;
+        margin-top: 8px;
+      }
+    }
+  </style>
+  <style>body { box-sizing: border-box; }</style>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+ </head>
+ <body>
+  <div class="wrapper">
+   <h1 id="app-title">Smart Meal Planner Pro</h1>
+   <p class="subtitle">Planul nutrițional personalizat în 60 de secunde</p>
+   <div class="grid-inputs">
+    <div class="input-group">
+     <label for="sex">Sex</label> <select id="sex"> <option value="m">Masculin</option> <option value="f">Feminin</option> </select> <span class="error-text" id="sex-error"></span>
+    </div>
+    <div class="input-group">
+     <label for="w">Greutate (kg)</label> <input type="number" id="w" value="75" min="30" max="200"> <span class="error-text" id="w-error"></span>
+    </div>
+    <div class="input-group">
+     <label for="h">Înălțime (cm)</label> <input type="number" id="h" value="180" min="140" max="230"> <span class="error-text" id="h-error"></span>
+    </div>
+    <div class="input-group">
+     <label for="age">Vârstă</label> <input type="number" id="age" value="30" min="15" max="100"> <span class="error-text" id="age-error"></span>
+    </div>
+    <div class="input-group">
+     <label for="act">Activitate</label> <select id="act"> <option value="1.2">Sedentar</option> <option value="1.375">Ușor Activ</option> <option value="1.55">Moderat</option> <option value="1.725">Intens</option> </select>
+    </div>
+    <div class="input-group">
+     <label for="mCount">Nr. Mese</label> <select id="mCount"> <option value="3">3 Mese</option> <option value="4">4 Mese</option> <option value="5">5 Mese</option> </select>
+    </div>
+    <div class="input-group">
+     <label for="goal">Obiectiv</label> <select id="goal"> <option value="loss">📉 Scădere Greutate</option> <option value="maintain">➡️ Menținere</option> <option value="muscle">📈 Masă Musculară</option> </select>
+    </div>
+   </div>
+   <div class="allergy-section">
+    <label>⚠️ Excludere Alergeni:</label>
+    <div class="allergy-grid" id="allergens"><label class="check-item"><input type="checkbox" value="lactoza"> Lactoză</label> <label class="check-item"><input type="checkbox" value="gluten"> Gluten</label> <label class="check-item"><input type="checkbox" value="ou"> Ouă</label> <label class="check-item"><input type="checkbox" value="nuci"> Nuci</label> <label class="check-item"><input type="checkbox" value="peste"> Pește</label> <label class="check-item"><input type="checkbox" value="soia"> Soia</label>
+    </div>
+   </div><button class="btn-calc" onclick="generate()" id="calc-btn"> <span class="spinner" id="spinner"></span> <span id="btn-text">CALCULEAZĂ PLANUL DE MASĂ</span> </button>
+   <div id="results-summary"></div>
+   <div id="plan-container"></div>
+  </div>
   <script>
-    const mealEmojis = {
-      "Mic Dejun": "🌅", "Gustare 1": "🍎", "Prânz": "☀️", "Gustare 2": "🥤", "Cină": "🌙"
+    const defaultConfig = {
+      app_title: "Smart Meal Planner Pro",
+      button_text: "CALCULEAZĂ PLANUL DE MASĂ"
     };
 
-    // Exemplu simplificat de DB pentru teste
+    let config = { ...defaultConfig };
+
+    const mealEmojis = {
+      "Mic Dejun": "🌅",
+      "Gustare 1": "🍎",
+      "Prânz": "☀️",
+      "Gustare 2": "🥤",
+      "Cină": "🌙"
+    };
+
+    // Sistema de tracking pentru a evita repetarea meselor
+    let usedMeals = {
+      mic_dejun: [],
+      pranz: [],
+      cina: [],
+      gustare: []
+    };
+
+    function resetMealsIfNeeded(newExclusions, newGoal) {
+      const key = `${newExclusions.join(",")}|${newGoal}`;
+      if (window.lastGenerationKey !== key) {
+        usedMeals = { mic_dejun: [], pranz: [], cina: [], gustare: [] };
+        window.lastGenerationKey = key;
+      }
+    }
+
     const db = {
       mic_dejun: [
-        { n: "Ouă ochiuri cu bacon", a: ["ou"], kcal: 380 },
-        { n: "Terci de ovăz", a: ["gluten", "lactoza"], kcal: 320 }
+        { n: "Ouă ochiuri cu bacon și pâine prăjită (3 ouă, 30g bacon, 2 felii pâine)", a: ["ou", "gluten"], kcal: 380, p: 18, f: 20, c: 32 },
+        { n: "Omleta cu cașcaval și ciuperci (3 ouă, 60g cașcaval, 150g ciuperci)", a: ["ou", "lactoza"], kcal: 340, p: 24, f: 22, c: 6 },
+        { n: "Terci de ovăz cu lapte și miere (50g ovăz, 250ml lapte, miere)", a: ["gluten", "lactoza"], kcal: 320, p: 10, f: 8, c: 50 },
+        { n: "Toast cu unt și gem de căpșuni (2 felii pâine, 20g unt, 30g gem)", a: ["gluten", "lactoza"], kcal: 300, p: 6, f: 12, c: 44 },
+        { n: "Iaurt grec cu miere și migdale (200g iaurt, miere, 25g migdale)", a: ["lactoza", "nuci"], kcal: 290, p: 18, f: 16, c: 20 },
+        { n: "Ouă rumenite cu slănină și pâine (2 ouă, 40g slănină, 2 felii pâine)", a: ["ou", "gluten"], kcal: 360, p: 16, f: 18, c: 34 },
+        { n: "Gris cu lapte și zahăr (50g gris, 250ml lapte, 1 lingură zahăr)", a: ["gluten", "lactoza"], kcal: 280, p: 7, f: 6, c: 52 },
+        { n: "Brânză proaspătă cu miere (150g brânză, 1 lingură miere)", a: ["lactoza"], kcal: 240, p: 16, f: 12, c: 22 },
+        { n: "Pâine neagră cu unt și brânză (2 felii, 20g unt, 50g brânză)", a: ["gluten", "lactoza"], kcal: 310, p: 10, f: 14, c: 38 },
+        { n: "Smoothie banană cu lapte și miere (1 banană, 250ml lapte, miere)", a: ["lactoza"], kcal: 260, p: 8, f: 6, c: 42 },
+        { n: "Ouă ochiuri cu roșii și brânză (3 ouă, 100g roșii, 50g brânză)", a: ["ou", "lactoza"], kcal: 320, p: 22, f: 18, c: 8 },
+        { n: "Pâine albă cu unt de arahide și banană (2 felii, 20g unt, 1 banană)", a: ["gluten", "nuci"], kcal: 340, p: 10, f: 12, c: 50 },
+        { n: "Müesli cu lapte și fructe (50g müesli, 250ml lapte, 100g fructe)", a: ["gluten", "lactoza"], kcal: 330, p: 10, f: 10, c: 52 },
+        { n: "Omleta cu brânză și roșii (3 ouă, 60g brânză, 100g roșii)", a: ["ou", "lactoza"], kcal: 310, p: 20, f: 20, c: 6 },
+        { n: "Iaurt cu granola și miere (200g iaurt, 40g granola, miere)", a: ["lactoza", "gluten"], kcal: 320, p: 10, f: 12, c: 48 },
+        { n: "Pâine prăjită cu cașcaval și muștar (2 felii, 50g cașcaval, muștar)", a: ["gluten", "lactoza"], kcal: 300, p: 12, f: 14, c: 32 },
+        { n: "Ouă rumenite cu pâine și unt (3 ouă, 2 felii pâine, 15g unt)", a: ["ou", "gluten", "lactoza"], kcal: 340, p: 16, f: 16, c: 36 },
+        { n: "Pudingă de lapte cu cacao (30g praf cacao, 250ml lapte, zahăr)", a: ["lactoza"], kcal: 240, p: 8, f: 5, c: 42 },
+        { n: "Toast cu brânză smântână și marmită (2 felii, 50g brânză, marmită)", a: ["gluten", "lactoza"], kcal: 280, p: 12, f: 12, c: 32 },
+        { n: "Lapte cu miel și biscuiți (250ml lapte, 30g biscuiți, 1 lingură miel)", a: ["gluten", "lactoza"], kcal: 260, p: 7, f: 6, c: 46 },
+        { n: "Omleta simplu cu pâine (4 ouă, 2 felii pâine, unt)", a: ["ou", "gluten", "lactoza"], kcal: 360, p: 18, f: 18, c: 32 },
+        { n: "Brânză ricotta cu gem (100g ricotta, 30g gem, 1 feliu pâine)", a: ["gluten", "lactoza"], kcal: 240, p: 10, f: 8, c: 32 },
+        { n: "Semolină cu lapte și zahăr (50g semolină, 250ml lapte, zahăr)", a: ["gluten", "lactoza"], kcal: 300, p: 8, f: 7, c: 54 },
+        { n: "Ouă ochiuri cu sunca și pâine (3 ouă, 40g sunca, 2 felii pâine)", a: ["ou", "gluten"], kcal: 350, p: 18, f: 16, c: 36 },
+        { n: "Iaurt cu biscuiți și miere (200g iaurt, 40g biscuiți, miere)", a: ["lactoza", "gluten"], kcal: 310, p: 8, f: 10, c: 48 },
+        { n: "Pâine neagră cu unt și marmită (2 felii, 15g unt, marmită)", a: ["gluten", "lactoza"], kcal: 270, p: 8, f: 10, c: 36 },
+        { n: "Lapte cu praf de cacao și zahăr (250ml lapte, 1 lingură cacao, zahăr)", a: ["lactoza"], kcal: 200, p: 8, f: 5, c: 32 },
+        { n: "Omleta cu șuncă și cașcaval (3 ouă, 40g șuncă, 50g cașcaval)", a: ["ou", "lactoza"], kcal: 340, p: 24, f: 20, c: 4 },
+        { n: "Toast cu mozzarella și roșii (2 felii, 80g mozzarella, roșii)", a: ["gluten", "lactoza"], kcal: 300, p: 14, f: 12, c: 32 },
+        { n: "Tart de casă cu lapte și zahăr (100g tart, 200ml lapte, zahăr)", a: ["gluten", "lactoza"], kcal: 280, p: 8, f: 8, c: 46 },
+        { n: "Ouă ochiuri simple cu pâine și sare (3 ouă, 2 felii pâine, sare)", a: ["ou", "gluten"], kcal: 320, p: 14, f: 14, c: 36 },
+        { n: "Brânză proaspătă cu pâine și miere (120g brânză, 2 felii pâine, miere)", a: ["gluten", "lactoza"], kcal: 310, p: 14, f: 12, c: 38 },
+        { n: "Gris cu unt și zahăr (50g gris, 250ml apă, 15g unt, zahăr)", a: ["gluten", "lactoza"], kcal: 290, p: 6, f: 10, c: 48 },
+        { n: "Pâine albă prăjită cu gem (2 felii, 30g gem, 1 lingură unt)", a: ["gluten", "lactoza"], kcal: 280, p: 6, f: 10, c: 44 },
+        { n: "Iaurt cu muesli și migdale (200g iaurt, 35g muesli, 20g migdale)", a: ["lactoza", "gluten", "nuci"], kcal: 340, p: 10, f: 14, c: 46 },
+        { n: "Omleta cu ciuperci și pâine (3 ouă, 150g ciuperci, 1 feliu pâine)", a: ["ou", "gluten"], kcal: 300, p: 18, f: 14, c: 28 },
+        { n: "Lapte cu biscuiți și miere (250ml lapte, 35g biscuiți, miere)", a: ["gluten", "lactoza"], kcal: 280, p: 8, f: 8, c: 46 },
+        { n: "Toast cu brânză și cașcaval (2 felii, 100g brânză, 30g cașcaval)", a: ["gluten", "lactoza"], kcal: 340, p: 16, f: 16, c: 32 },
+        { n: "Ouă rumenite simple cu brânză (3 ouă, 50g brânză)", a: ["ou", "lactoza"], kcal: 300, p: 20, f: 18, c: 4 },
+        { n: "Prăjitura de casă cu lapte (100g prăjitură, 200ml lapte)", a: ["gluten", "lactoza"], kcal: 310, p: 8, f: 12, c: 44 },
+        { n: "Pâine neagră cu brânză și marmită (2 felii, 60g brânză, marmită)", a: ["gluten", "lactoza"], kcal: 290, p: 12, f: 12, c: 34 },
+        { n: "Iaurt cu gem și biscuiți (200g iaurt, 30g gem, 30g biscuiți)", a: ["lactoza", "gluten"], kcal: 300, p: 8, f: 8, c: 50 },
+        { n: "Omleta cu bacon și pâine (3 ouă, 30g bacon, 2 felii pâine)", a: ["ou", "gluten"], kcal: 360, p: 18, f: 18, c: 34 },
+        { n: "Brânză de vaci cu miere și pâine (130g brânză, miere, 2 felii pâine)", a: ["gluten", "lactoza"], kcal: 320, p: 14, f: 12, c: 40 }
       ],
       pranz: [
-        { n: "Piept de pui cu quinoa", a: [], kcal: 520 },
-        { n: "Somon cu broccoli", a: ["peste"], kcal: 550 }
+        { n: "Piept de pui la grătar cu quinoa și sparanghel (200g pui, 200g quinoa coapă, 200g sparanghel)", a: [], kcal: 520, p: 45, f: 12, c: 48 },
+        { n: "Somon la cuptor cu cartof dulce și broccoli (200g somon, 250g cartof, 200g broccoli)", a: ["peste"], kcal: 550, p: 38, f: 24, c: 52 },
+        { n: "Curcan cu orez brun și salată verde (200g curcan, 200g orez copt, 200g salată)", a: [], kcal: 480, p: 42, f: 10, c: 55 },
+        { n: "Tofu crocant cu mix de legume și tăiței de orez (250g tofu, 300g legume, 180g tăiței)", a: ["soia"], kcal: 450, p: 20, f: 14, c: 58 },
+        { n: "Mușchi de vită cu piure de mazăre și baby carrots (200g vită, 150g piure, 150g morcovi)", a: [], kcal: 530, p: 48, f: 18, c: 42 },
+        { n: "File de Cod cu risotto de conopidă (200g cod, 250g risotto, 100g conopidă)", a: ["peste"], kcal: 490, p: 40, f: 15, c: 55 },
+        { n: "Salată de năut cu avocado, ardei și zeamă de lămâie (200g năut, 100g avocado, 150g ardei)", a: [], kcal: 460, p: 16, f: 20, c: 54 },
+        { n: "Piept de pui cu cartof copt și legume coapte (200g pui, 250g cartof, 200g legume)", a: [], kcal: 510, p: 44, f: 12, c: 54 },
+        { n: "Cotlet de porc la grătar cu cartofi noi și ciuperci (200g porc, 250g cartofi, 150g ciuperci)", a: [], kcal: 540, p: 42, f: 20, c: 48 },
+        { n: "Pui teriyaki cu orez integral și broccoli (200g pui, 200g orez, 200g broccoli)", a: ["soia"], kcal: 500, p: 45, f: 11, c: 58 },
+        { n: "Peștele alb cu sos de lămâie și fasole verde (200g pește, 250g fasole, 1 lămâie)", a: ["peste"], kcal: 420, p: 38, f: 8, c: 48 },
+        { n: "Spaghete de grâu integral cu sos de roșii și carne tocată (200g paste, 150g carne, 100g sos)", a: ["gluten"], kcal: 550, p: 38, f: 16, c: 62 },
+        { n: "Salată grecească cu brânză feta și pui (250g salată, 100g feta, 150g pui)", a: ["lactoza"], kcal: 480, p: 40, f: 20, c: 28 },
+        { n: "Pui cu legume asiatice și orez jasmin (200g pui, 200g orez, 250g legume mixte)", a: [], kcal: 510, p: 42, f: 12, c: 56 },
+        { n: "Creveti reci cu paste integrale și pesto (150g creveți, 180g paste, 50g pesto)", a: ["peste", "gluten", "nuci"], kcal: 470, p: 36, f: 16, c: 48 },
+        { n: "Piept de curcan cu bărbunele și cartofi dulci (200g curcan, 150g bărbunele, 200g cartofi)", a: [], kcal: 490, p: 44, f: 10, c: 54 },
+        { n: "Chifteluțe de vită cu ciuperci și piure (200g vită, 150g ciuperci, 150g piure)", a: [], kcal: 520, p: 46, f: 18, c: 42 },
+        { n: "Lipschiuță cu legume proaspete și brânză (200g carne, 150g legume, 50g brânză)", a: ["gluten", "lactoza"], kcal: 480, p: 38, f: 18, c: 44 },
+        { n: "Salată chaîn cu ton, ouă și brânză (200g salată, 100g ton, 2 ouă, 50g brânză)", a: ["peste", "lactoza", "ou"], kcal: 450, p: 40, f: 18, c: 22 },
+        { n: "Pui kung pao cu orez și arahide (200g pui, 200g orez, 30g arahide)", a: ["nuci"], kcal: 530, p: 42, f: 18, c: 52 },
+        { n: "File de homar cu cartofi și măsline (180g homar, 250g cartofi, 50g măsline)", a: ["peste"], kcal: 520, p: 44, f: 16, c: 50 },
+        { n: "Pui BBQ cu cartof copt și coleslaw (200g pui, 250g cartof, 150g coleslaw)", a: [], kcal: 490, p: 42, f: 14, c: 54 },
+        { n: "Lentile roșii cu legume și orez (200g lentile, 200g orez, 200g legume)", a: [], kcal: 460, p: 20, f: 8, c: 72 },
+        { n: "Carne de miel cu mărar și cartofi (200g miel, 250g cartofi, mărar)", a: [], kcal: 540, p: 44, f: 22, c: 44 },
+        { n: "Pui cu sos de miere și muțar cu orez (200g pui, 200g orez, 100ml sos)", a: [], kcal: 500, p: 42, f: 12, c: 60 },
+        { n: "Paste cu brânză și broccoli (200g paste, 200g broccoli, 80g brânză)", a: ["gluten", "lactoza"], kcal: 480, p: 24, f: 14, c: 62 },
+        { n: "Pui cu legume și smântână (200g pui, 250g legume, 50ml smântână)", a: ["lactoza"], kcal: 510, p: 42, f: 20, c: 38 },
+        { n: "Somon cu fasole și salată (200g somon, 200g fasole, 150g salată)", a: ["peste"], kcal: 540, p: 42, f: 24, c: 42 },
+        { n: "Piept de pui cu piure de broccoli (200g pui, 300g broccoli, 30ml ulei)", a: [], kcal: 420, p: 44, f: 14, c: 28 },
+        { n: "Curcan cu conopidă și cartofi (200g curcan, 250g conopidă, 200g cartofi)", a: [], kcal: 480, p: 42, f: 10, c: 56 },
+        { n: "Rație de vită cu legume coapte (200g vită, 250g legume mixte)", a: [], kcal: 500, p: 46, f: 18, c: 32 },
+        { n: "Pui cu sos de ciuperci și orez alb (200g pui, 150g ciuperci, 200g orez)", a: [], kcal: 520, p: 42, f: 16, c: 58 },
+        { n: "Creveti cu paste și sos de usturoi (150g creveți, 200g paste, sos)", a: ["peste", "gluten"], kcal: 480, p: 32, f: 14, c: 56 },
+        { n: "Ton în ulei cu orez integral și legume (180g ton, 180g orez, 150g legume)", a: ["peste"], kcal: 510, p: 40, f: 16, c: 56 },
+        { n: "Piept de pui cu conopidă și piure (200g pui, 250g conopidă, 150g piure)", a: [], kcal: 450, p: 40, f: 12, c: 48 },
+        { n: "File de păstrăv cu cartofi și mărar (200g păstrăv, 250g cartofi, mărar)", a: ["peste"], kcal: 530, p: 36, f: 22, c: 50 },
+        { n: "Chifteluțe cu legume și orez brun (200g carne, 150g legume, 200g orez)", a: [], kcal: 540, p: 38, f: 20, c: 58 },
+        { n: "Pui cu sos BBQ și cartofi prăjiți (200g pui, 250g cartofi, 50ml sos)", a: [], kcal: 520, p: 40, f: 18, c: 52 },
+        { n: "Somon cu sparanghel și piure (200g somon, 200g sparanghel, 150g piure)", a: ["peste"], kcal: 530, p: 38, f: 24, c: 42 },
+        { n: "Curcan cu ciuperci și tăiței (200g curcan, 200g ciuperci, 180g tăiței)", a: ["gluten"], kcal: 510, p: 42, f: 14, c: 56 },
+        { n: "Salată de lentile cu carne tocată (200g salată, 100g lentile, 120g carne)", a: [], kcal: 480, p: 38, f: 14, c: 54 }
       ],
       cina: [
-        { n: "Salată cu pui", a: [], kcal: 480 },
-        { n: "Tofu cu legume", a: ["soia"], kcal: 450 }
+        { n: "Curcan cu fasole verde și usturoi la tigaie (180g curcan, 250g fasole, 50ml ulei)", a: [], kcal: 380, p: 38, f: 14, c: 22 },
+        { n: "Păstrăv la grătar cu lămâie și salată de rucola (200g păstrăv, 200g salată, 1 lămâie)", a: ["peste"], kcal: 350, p: 36, f: 16, c: 8 },
+        { n: "Creveți sotați cu dovlecei spaghetti (200g creveți, 300g dovlecei, 30ml ulei)", a: ["peste"], kcal: 320, p: 34, f: 12, c: 10 },
+        { n: "Supă cremă de linte roșie cu semințe de susan (200g linte, 500ml supă, 20g semințe)", a: [], kcal: 310, p: 18, f: 10, c: 38 },
+        { n: "Brânză de vaci slabă cu castraveți și mărar (150g brânză, 250g castraveți, mărar)", a: ["lactoza"], kcal: 240, p: 28, f: 10, c: 8 },
+        { n: "Mix de salată cu ton în suc propriu și măsline (150g ton, 250g salată, 50g măsline)", a: ["peste"], kcal: 300, p: 32, f: 12, c: 10 },
+        { n: "File de pui cu legume la grătar (200g pui, 300g legume, 20ml ulei)", a: [], kcal: 360, p: 40, f: 12, c: 18 },
+        { n: "Omeletă cu brânză și ciuperci (3 ouă, 60g brânză, 150g ciuperci)", a: ["ou", "lactoza"], kcal: 320, p: 22, f: 20, c: 6 },
+        { n: "Supă de pui cu legume și tăiței (150g pui, 300ml supă, 100g tăiței, legume)", a: ["gluten"], kcal: 290, p: 28, f: 8, c: 28 },
+        { n: "Tofu prăjit cu legume și sos de soia (250g tofu, 250g legume, 30ml sos)", a: ["soia"], kcal: 340, p: 24, f: 14, c: 32 },
+        { n: "Peștele la tavă cu cartofi și broccoli (200g pește, 250g cartofi, 200g broccoli)", a: ["peste"], kcal: 410, p: 38, f: 14, c: 38 },
+        { n: "Salată de linte cu morcovi și sfeclă (200g linte, 150g legume, 30ml ulei)", a: [], kcal: 280, p: 16, f: 10, c: 36 },
+        { n: "Piept de pui cu sos usturoi și cartofi (200g pui, 250g cartofi, sos)", a: [], kcal: 380, p: 40, f: 12, c: 38 },
+        { n: "Curcan cu dovlecei grătiți și semințe (180g curcan, 300g dovlecei, 20g semințe)", a: [], kcal: 340, p: 36, f: 12, c: 20 },
+        { n: "Creveti cu sos roșu și sparanghel (180g creveți, 250g sparanghel, 100ml sos)", a: ["peste"], kcal: 300, p: 32, f: 10, c: 16 },
+        { n: "Broccoli cu sos tahini și năut (250g broccoli, 150g năut, 30g tahini)", a: ["nuci"], kcal: 310, p: 16, f: 12, c: 36 },
+        { n: "Ochiuri de pui cu conopidă și usturoi (200g pui, 250g conopidă, usturoi)", a: [], kcal: 340, p: 38, f: 12, c: 18 },
+        { n: "Supă cremă de conopidă cu brânză (300g conopidă, 250ml brânză, legume)", a: ["lactoza"], kcal: 280, p: 16, f: 10, c: 32 },
+        { n: "Salată Cezar cu piept de pui și parmezan (200g salată, 120g pui, 40g brânză)", a: ["lactoza", "ou"], kcal: 360, p: 38, f: 16, c: 16 },
+        { n: "Pașta integrală cu legume și sos natural (180g paste, 200g legume, 100ml sos)", a: ["gluten"], kcal: 380, p: 16, f: 10, c: 58 },
+        { n: "File de crap cu legume și usturoi (200g crap, 250g legume, usturoi)", a: ["peste"], kcal: 350, p: 36, f: 14, c: 16 },
+        { n: "Pui cu broccoli și sos brun (200g pui, 250g broccoli, 50ml sos)", a: [], kcal: 320, p: 38, f: 10, c: 18 },
+        { n: "Curcan cu salată de repostu și semințe (180g curcan, 200g repostu, 20g semințe)", a: [], kcal: 300, p: 36, f: 10, c: 12 },
+        { n: "Creveti cu orez integral și legume (150g creveți, 180g orez, 150g legume)", a: ["peste"], kcal: 380, p: 32, f: 10, c: 48 },
+        { n: "Salată de frunze cu ton și ouă (200g salată, 100g ton, 2 ouă)", a: ["peste", "ou"], kcal: 320, p: 34, f: 12, c: 12 },
+        { n: "Somon cu ciuperci și broccoli (180g somon, 150g ciuperci, 200g broccoli)", a: ["peste"], kcal: 420, p: 38, f: 20, c: 18 },
+        { n: "Piept de pui cu salată verde și măsline (200g pui, 250g salată, 40g măsline)", a: [], kcal: 340, p: 38, f: 14, c: 10 },
+        { n: "Supă de legume cu carne de vită (150g vită, 300g legume, 400ml supă)", a: [], kcal: 290, p: 28, f: 8, c: 24 },
+        { n: "Tofu cu legume chinezești (250g tofu, 250g legume, 30ml ulei)", a: ["soia"], kcal: 330, p: 22, f: 14, c: 28 },
+        { n: "Curcan cu spanac și piure de cartof (180g curcan, 150g spanac, 150g piure)", a: [], kcal: 360, p: 40, f: 12, c: 24 },
+        { n: "Pui cu ciuperci și cartofi noi (200g pui, 150g ciuperci, 200g cartofi)", a: [], kcal: 370, p: 38, f: 12, c: 32 },
+        { n: "Somon cu dafin și portocală (200g somon, dafin, portocală)", a: ["peste"], kcal: 400, p: 36, f: 18, c: 12 },
+        { n: "Curcan la tigaie cu legume asiatice (180g curcan, 250g legume, 30ml ulei)", a: [], kcal: 350, p: 36, f: 12, c: 24 },
+        { n: "Peștele alb cu creveti și legume (150g pește, 100g creveți, 200g legume)", a: ["peste"], kcal: 340, p: 40, f: 10, c: 16 },
+        { n: "Supă de legume cu carne de pui (200g pui, 300g legume, 400ml supă)", a: [], kcal: 320, p: 32, f: 8, c: 28 },
+        { n: "Piept de pui cu roșii și mozzarella (200g pui, 100g roșii, 80g mozzarella)", a: ["lactoza"], kcal: 380, p: 40, f: 16, c: 12 },
+        { n: "Curcan cu sos negru și orez mic (180g curcan, 150g orez, 50ml sos)", a: [], kcal: 400, p: 36, f: 12, c: 48 },
+        { n: "Salată cu creveți și dressing cu mărar (250g salată, 150g creveți, sos)", a: ["peste"], kcal: 310, p: 36, f: 10, c: 12 },
+        { n: "Pui crocant cu dovlecei și cartofi dulci (200g pui, 200g dovlecei, 150g cartofi)", a: [], kcal: 420, p: 38, f: 16, c: 40 },
+        { n: "Somon cu legume la grătar (200g somon, 250g legume mixte)", a: ["peste"], kcal: 430, p: 38, f: 22, c: 12 }
       ],
       gustare: [
-        { n: "Măr", a: [], kcal: 80 },
-        { n: "Iaurt", a: ["lactoza"], kcal: 120 }
+        { n: "Un pumn de migdale crude (30g migdale)", a: ["nuci"], kcal: 170, p: 6, f: 15, c: 6 },
+        { n: "Un măr cu o lingură de unt de arahide (1 măr, 15g unt)", a: ["nuci"], kcal: 200, p: 6, f: 10, c: 22 },
+        { n: "Iaurt mic de băut fără zahăr (150ml)", a: ["lactoza"], kcal: 110, p: 10, f: 3, c: 8 },
+        { n: "2 felii de Wasa cu humus (2 felii, 50g humus)", a: ["gluten"], kcal: 180, p: 8, f: 8, c: 20 },
+        { n: "O mână de afine și câteva nuci braziliene (100g afine, 20g nuci)", a: ["nuci"], kcal: 190, p: 4, f: 12, c: 20 },
+        { n: "Baton proteic cu cacao (1 baton 40g)", a: [], kcal: 150, p: 20, f: 4, c: 8 },
+        { n: "Banană cu o lingură de unt de migdale (1 banană, 15g unt)", a: ["nuci"], kcal: 210, p: 6, f: 10, c: 26 },
+        { n: "Brânză cottage cu miere și nucă (100g brânză, 1 lingură miere, 15g nucă)", a: ["lactoza", "nuci"], kcal: 180, p: 14, f: 10, c: 14 },
+        { n: "Hummus cu legume crocante (50g hummus, 150g legume: morcovi, castraveți)", a: [], kcal: 140, p: 6, f: 6, c: 16 },
+        { n: "Portocală cu o lingură de semințe de floarea-soarelui (1 portocală, 15g semințe)", a: [], kcal: 120, p: 3, f: 5, c: 18 },
+        { n: "Iaurt grecesc cu miere și granola (150g iaurt, 1 lingură miere, 30g granola)", a: ["lactoza", "gluten"], kcal: 220, p: 12, f: 8, c: 24 },
+        { n: "Creveti gătite cu lămâie și usturoi (100g creveți, lămâie)", a: ["peste"], kcal: 110, p: 20, f: 2, c: 2 },
+        { n: "Smântână cu miere și migdale (50g smântână, miere, 20g migdale)", a: ["lactoza", "nuci"], kcal: 190, p: 4, f: 16, c: 10 },
+        { n: "Pâine prăjită cu brânză și tomate (1 feliu pâine, 50g brânză, tomate)", a: ["gluten", "lactoza"], kcal: 160, p: 8, f: 8, c: 16 },
+        { n: "Mix de fructe deshidratate și semințe (50g fructe, 20g semințe)", a: [], kcal: 160, p: 4, f: 4, c: 32 },
+        { n: "Nuci de Brazilia și migdale (20g nuci de Brazilia, 20g migdale)", a: ["nuci"], kcal: 200, p: 6, f: 20, c: 4 },
+        { n: "Iaurt cu granola și cacao (150g iaurt, 30g granola, 1 lingură cacao)", a: ["lactoza", "gluten"], kcal: 210, p: 10, f: 8, c: 26 },
+        { n: "Ton în ulei de măsline cu biscuiți integrali (100g ton, 30g biscuiți)", a: ["peste", "gluten"], kcal: 180, p: 18, f: 8, c: 10 },
+        { n: "Semințe de pepenți și floarea-soarelui (30g semințe mixte)", a: [], kcal: 160, p: 6, f: 14, c: 6 },
+        { n: "Măr cu o mână de nuci pecan (1 măr, 30g nuci)", a: ["nuci"], kcal: 210, p: 4, f: 14, c: 24 },
+        { n: "Brânză ricotta cu fructe (100g ricotta, 100g fructe mixte)", a: ["lactoza"], kcal: 150, p: 12, f: 6, c: 14 },
+        { n: "Pudingă de chia simplu (40g chia, 200ml apă, sare puțin)", a: [], kcal: 220, p: 8, f: 14, c: 16 },
+        { n: "Smoothie cu fructe și iaurt (150g iaurt, 100g fructe)", a: ["lactoza"], kcal: 140, p: 8, f: 3, c: 20 },
+        { n: "Baton cu arahide și ciocolată (1 baton)", a: ["nuci"], kcal: 200, p: 8, f: 12, c: 18 },
+        { n: "Brânză mozzarella cu tomate și busuioc (100g brânză, 100g tomate)", a: ["lactoza"], kcal: 170, p: 14, f: 10, c: 4 },
+        { n: "Ou dur cu muștar și pâine (1 ou, pâine, muștar)", a: ["ou", "gluten"], kcal: 160, p: 12, f: 8, c: 14 },
+        { n: "Cacao cu lapte (1 lingură cacao, 200ml lapte, miere)", a: ["lactoza"], kcal: 150, p: 8, f: 5, c: 20 },
+        { n: "Semințe de floarea-soarelui rase (40g semințe)", a: [], kcal: 220, p: 8, f: 20, c: 6 },
+        { n: "Măr tranșat cu unt de alune (1 măr, 15g unt)", a: ["nuci"], kcal: 190, p: 5, f: 10, c: 24 },
+        { n: "Brânză smântână cu miere și pâine (60g brânză, miere, 1 feliu pâine)", a: ["gluten", "lactoza"], kcal: 200, p: 6, f: 10, c: 24 },
+        { n: "Peste în can cu ulei și morcovi (100g pește, 150g legume)", a: ["peste"], kcal: 130, p: 18, f: 4, c: 6 },
+        { n: "Iaurt cu crunchy și miere (150g iaurt, 30g crunchy)", a: ["lactoza", "gluten"], kcal: 200, p: 8, f: 6, c: 32 },
+        { n: "Semințe de in cu iaurt (30g semințe, 150g iaurt)", a: ["lactoza"], kcal: 180, p: 8, f: 12, c: 14 },
+        { n: "Piure de alune cu banană (25g piure, 1 banană)", a: ["nuci"], kcal: 220, p: 8, f: 12, c: 28 },
+        { n: "Brânză de vaci cu fructe (100g brânză, 150g fructe)", a: ["lactoza"], kcal: 170, p: 14, f: 8, c: 16 },
+        { n: "Ouă fierte cu sare și piper (2 ouă)", a: ["ou"], kcal: 140, p: 12, f: 10, c: 2 },
+        { n: "Biscuiți integrali cu brânză (30g biscuiți, 50g brânză)", a: ["gluten", "lactoza"], kcal: 200, p: 8, f: 10, c: 22 },
+        { n: "Castane crude (40g castane)", a: [], kcal: 150, p: 4, f: 6, c: 28 },
+        { n: "Pudingă de proteină ușoară (30g proteină, 200ml apă)", a: [], kcal: 120, p: 24, f: 2, c: 2 },
+        { n: "Afine cu lapte de migdale (100g afine, 200ml lapte)", a: ["nuci"], kcal: 140, p: 4, f: 6, c: 22 },
+        { n: "Migdale și fructe uscate (30g migdale, 20g fructe)", a: ["nuci"], kcal: 200, p: 6, f: 14, c: 16 }
       ]
     };
 
+    function fisherYatesShuffle(arr) {
+      const shuffled = [...arr];
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      }
+      return shuffled;
+    }
+
+    function clearErrors() {
+      document.querySelectorAll('.error-text').forEach(el => el.style.display = 'none');
+      document.querySelectorAll('input, select').forEach(el => el.classList.remove('error'));
+    }
+
+    function validateInputs() {
+      clearErrors();
+      let valid = true;
+
+      const w = parseFloat(document.getElementById('w').value);
+      if (isNaN(w) || w < 30 || w > 200) {
+        showError('w', 'Greutate între 30-200 kg');
+        valid = false;
+      }
+
+      const h = parseFloat(document.getElementById('h').value);
+      if (isNaN(h) || h < 140 || h > 230) {
+        showError('h', 'Înălțime între 140-230 cm');
+        valid = false;
+      }
+
+      const age = parseInt(document.getElementById('age').value);
+      if (isNaN(age) || age < 15 || age > 100) {
+        showError('age', 'Vârstă între 15-100 ani');
+        valid = false;
+      }
+
+      return valid;
+    }
+
+    function showError(fieldId, message) {
+      const field = document.getElementById(fieldId);
+      const errorEl = document.getElementById(fieldId + '-error');
+      field.classList.add('error');
+      errorEl.textContent = message;
+      errorEl.style.display = 'block';
+    }
+
     function generate() {
-      const spinner = document.getElementById("spinner");
-      const btnText = document.getElementById("btn-text");
-      spinner.classList.add("active");
-      btnText.textContent = "Se generează...";
+      if (!validateInputs()) return;
+
+      const btn = document.getElementById('calc-btn');
+      const spinner = document.getElementById('spinner');
+      const btnText = document.getElementById('btn-text');
+
+      btn.disabled = true;
+      spinner.classList.add('active');
+      btnText.textContent = 'Se procesează...';
 
       setTimeout(() => {
-        spinner.classList.remove("active");
-        btnText.textContent = "CALCULEAZĂ PLANUL DE MASĂ";
+        const w = parseFloat(document.getElementById('w').value);
+        const h = parseFloat(document.getElementById('h').value);
+        const a = parseInt(document.getElementById('age').value);
+        const s = document.getElementById('sex').value;
+        const act = parseFloat(document.getElementById('act').value);
+        const mCount = parseInt(document.getElementById('mCount').value);
+        const goal = document.getElementById('goal').value;
+        const excluded = Array.from(document.querySelectorAll('#allergens input:checked')).map(c => c.value);
 
-        const exclusions = Array.from(document.querySelectorAll("#allergens input:checked")).map(el => el.value);
-        const days = 7;
-        const planContainer = document.getElementById("plan-container");
-        planContainer.innerHTML = "";
+        // Reset meals tracker if parameters changed
+        resetMealsIfNeeded(excluded, goal);
 
-        for (let d = 1; d <= days; d++) {
-          const dayCard = document.createElement("div");
-          dayCard.className = "day-card";
-          dayCard.innerHTML = `<div class="day-title">Ziua ${d}</div>`;
-          planContainer.appendChild(dayCard);
+        let bmr = (10 * w) + (6.25 * h) - (5 * a);
+        bmr = (s === 'm') ? bmr + 5 : bmr - 161;
+        let tdee = Math.round(bmr * act);
 
-          ["Mic Dejun", "Gustare 1", "Prânz", "Gustare 2", "Cină"].forEach(meal => {
-            const mealKey = meal.toLowerCase().replace(" ", "_");
-            const options = db[mealKey].filter(item => !item.a.some(a => exclusions.includes(a)));
-            const chosen = options[Math.floor(Math.random() * options.length)];
-            if (chosen) {
-              const mealRow = document.createElement("div");
-              mealRow.className = "meal-row";
-              mealRow.innerHTML = `<div class="meal-name">${mealEmojis[meal]} ${meal}</div>
-                <div class="food-option">
-                  <span class="food-text">${chosen.n}</span>
-                  <span class="food-kcal">${chosen.kcal} kcal</span>
-                </div>`;
-              dayCard.appendChild(mealRow);
-            }
-          });
+        if (goal === 'loss') {
+          tdee = Math.round(tdee * 0.85);
+        } else if (goal === 'muscle') {
+          tdee = Math.round(tdee * 1.10);
         }
 
-        document.getElementById("results-summary").style.display = "block";
-        document.getElementById("results-summary").innerHTML = `<h2>Plan generat cu succes!</h2><p>Vezi meniul de mai jos.</p>`;
-      }, 1000);
+        const goalLabels = {
+          loss: "📉 Scădere Greutate",
+          maintain: "➡️ Menținere",
+          muscle: "📈 Masă Musculară"
+        };
+
+        const res = document.getElementById('results-summary');
+        res.style.display = 'block';
+        res.innerHTML = `
+          <h2>${tdee} kcal</h2>
+          <p>${goalLabels[goal]} • ${mCount} mese • Fără ${excluded.length > 0 ? excluded.join(", ") : "alergeni bifați"}</p>
+        `;
+
+        const days = ["Luni", "Marți", "Miercuri", "Joi", "Vineri", "Sâmbătă", "Duminică"];
+        let html = "";
+        let delayCounter = 0;
+
+        days.forEach(day => {
+          html += `<div class="day-card" style="animation-delay: ${delayCounter * 0.1}s">
+            <div class="day-title">${day}</div>`;
+
+          html += renderMeal("Mic Dejun", db.mic_dejun, excluded, goal);
+          if (mCount >= 4) html += renderMeal("Gustare 1", db.gustare, excluded, goal);
+          html += renderMeal("Prânz", db.pranz, excluded, goal);
+          if (mCount >= 5) html += renderMeal("Gustare 2", db.gustare, excluded, goal);
+          html += renderMeal("Cină", db.cina, excluded, goal);
+
+          html += `</div>`;
+          delayCounter++;
+        });
+
+        document.getElementById('plan-container').innerHTML = html;
+
+        res.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        btn.disabled = false;
+        spinner.classList.remove('active');
+        btnText.textContent = config.button_text;
+      }, 500);
     }
+
+    function renderMeal(label, items, exclusions, goal) {
+      // SMART ALLERGEN FILTER: Show foods that DON'T CONTAIN the selected allergens
+      const safe = items.filter(f => {
+        if (exclusions.length === 0) return true; // No allergens selected, all foods safe
+        // Only show foods that don't have ANY of the selected allergens
+        return !f.a.some(allergen => exclusions.includes(allergen));
+      });
+
+      if (safe.length < 2) {
+        return `
+          <div class="meal-row">
+            <div class="meal-name">${mealEmojis[label] || "🍽️"} ${label}</div>
+            <div class="no-safe">⚠️ Nu sunt destule variante sigure pentru albergenii selectați. Încearcă să dezactivezi unele alergeni.</div>
+          </div>
+        `;
+      }
+
+      // Get already used meals for this category
+      const categoryKey = label.includes("Gustare") ? "gustare" : (label === "Mic Dejun" ? "mic_dejun" : (label === "Prânz" ? "pranz" : "cina"));
+      const used = usedMeals[categoryKey] || [];
+
+      // Filter out already used meals
+      let available = safe.filter(meal => !used.includes(meal.n));
+
+      // If all meals used, reset and use all available
+      if (available.length < 2) {
+        available = safe;
+        usedMeals[categoryKey] = [];
+      }
+
+      let filteredMeals = available;
+      if (goal === 'loss') {
+        filteredMeals = available.filter(meal => meal.kcal <= available.reduce((sum, m) => sum + m.kcal, 0) / available.length * 1.1);
+      } else if (goal === 'muscle') {
+        filteredMeals = available.filter(meal => meal.kcal >= available.reduce((sum, m) => sum + m.kcal, 0) / available.length * 0.95);
+      }
+
+      if (filteredMeals.length < 2) {
+        filteredMeals = available;
+      }
+
+      const shuffled = fisherYatesShuffle(filteredMeals).slice(0, 2);
+
+      // Mark these meals as used
+      shuffled.forEach(meal => {
+        usedMeals[categoryKey].push(meal.n);
+      });
+
+      function getMacroBreakdown(meal) {
+        const p = Math.round((meal.p / meal.kcal) * 100);
+        const f = Math.round((meal.f / meal.kcal) * 100);
+        const c = Math.round((meal.c / meal.kcal) * 100);
+        return `P: ${p}% | F: ${f}% | C: ${c}%`;
+      }
+
+      return `
+        <div class="meal-row">
+          <div class="meal-name">${mealEmojis[label] || "🍽️"} ${label}</div>
+          <div class="food-option">
+            <div class="food-text">
+              <div>✓ ${shuffled[0].n}</div>
+              <div style="font-size: 0.8rem; color: #a0d8b0; margin-top: 6px;">${getMacroBreakdown(shuffled[0])}</div>
+            </div>
+            <button class="info-btn" onmouseover="this.querySelector('.tooltip').style.display='block'" onmouseout="this.querySelector('.tooltip').style.display='none'" onclick="event.stopPropagation()">
+              📖
+              <div class="tooltip">${shuffled[0].prep}</div>
+            </button>
+            <span class="food-kcal">${shuffled[0].kcal} kcal</span>
+          </div>
+          <div class="or-divider">— SAU —</div>
+          <div class="food-option">
+            <div class="food-text">
+              <div>✓ ${shuffled[1].n}</div>
+              <div style="font-size: 0.8rem; color: #a0d8b0; margin-top: 6px;">${getMacroBreakdown(shuffled[1])}</div>
+            </div>
+            <button class="info-btn" onmouseover="this.querySelector('.tooltip').style.display='block'" onmouseout="this.querySelector('.tooltip').style.display='none'" onclick="event.stopPropagation()">
+              📖
+              <div class="tooltip">${shuffled[1].prep}</div>
+            </button>
+            <span class="food-kcal">${shuffled[1].kcal} kcal</span>
+          </div>
+        </div>
+      `;
+    }
+
+    window.elementSdk.init({
+      defaultConfig,
+      onConfigChange: async (newConfig) => {
+        config = newConfig;
+        document.getElementById('app-title').textContent = config.app_title || defaultConfig.app_title;
+        document.getElementById('btn-text').textContent = config.button_text || defaultConfig.button_text;
+      },
+      mapToCapabilities: (cfg) => ({
+        recolorables: [],
+        borderables: [],
+        fontEditable: undefined,
+        fontSizeable: undefined
+      }),
+      mapToEditPanelValues: (cfg) => new Map([
+        ["app_title", cfg.app_title || defaultConfig.app_title],
+        ["button_text", cfg.button_text || defaultConfig.button_text]
+      ])
+    });
   </script>
-</body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e980a94130ee4a9',t:'MTc3NTcyMjI4OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
