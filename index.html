@@ -1,144 +1,148 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ro">
 <head>
-<meta charset="UTF-8">
-<title>Meal Planner</title>
-
-<style>
-
-body{
-font-family:Arial;
-background:#f4f4f4;
-padding:40px;
-text-align:center;
-}
-
-.container{
-max-width:700px;
-margin:auto;
-background:white;
-padding:30px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-button{
-background:#4CAF50;
-color:white;
-border:none;
-padding:15px 25px;
-font-size:16px;
-border-radius:6px;
-cursor:pointer;
-}
-
-button:hover{
-background:#45a049;
-}
-
-.meal{
-margin-top:20px;
-padding:15px;
-border:1px solid #ddd;
-border-radius:8px;
-}
-
-.macros{
-margin-top:20px;
-font-weight:bold;
-}
-
-</style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Meal Planner Pro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <style>
+    /* --- Stiluri existente păstrate --- */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; width: 100%; }
+    body { font-family: 'Outfit', sans-serif; background: linear-gradient(135deg, #0f172a 0%, #1a1a2e 50%, #0f3a2e 100%); color: #e8ebf0; padding: 24px; overflow-x: hidden; position: relative; }
+    body::before { content: ''; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 20% 30%, rgba(16, 185, 129, 0.15) 0%, transparent 40%), radial-gradient(circle at 80% 70%, rgba(34, 197, 94, 0.1) 0%, transparent 50%); pointer-events: none; z-index: 0; }
+    .wrapper { max-width: 1100px; margin: 0 auto; background: linear-gradient(135deg, #0f172a 0%, #1a1f35 50%, #1a2e2a 100%); padding: 48px; border-radius: 28px; border: 1.5px solid rgba(16, 185, 129, 0.3); box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(16, 185, 129, 0.2), 0 0 40px rgba(16, 185, 129, 0.1); animation: slideUp 0.9s cubic-bezier(0.34, 1.56, 0.64, 1); position: relative; z-index: 1; }
+    @keyframes slideUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
+    h1 { text-align: center; font-family: 'Outfit', sans-serif; background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 8px; font-size: 2.8rem; font-weight: 800; letter-spacing: -1px; text-shadow: 0 0 30px rgba(16, 185, 129, 0.3); }
+    .subtitle { text-align: center; color: #a0d8b0; margin-bottom: 40px; font-size: 1rem; font-weight: 500; }
+    .grid-inputs { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; margin-bottom: 32px; }
+    .input-group { display: flex; flex-direction: column; animation: fadeInUp 0.6s ease-out forwards; opacity: 0; }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    label { display: block; font-size: 0.75rem; font-weight: 700; margin-bottom: 8px; color: #9ca3af; text-transform: uppercase; letter-spacing: 1px; }
+    input, select { width: 100%; padding: 12px 14px; border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 10px; font-size: 0.95rem; font-family: 'Outfit', sans-serif; transition: all 0.3s ease; background: rgba(15, 23, 42, 0.6); color: #e8ebf0; }
+    input:focus, select:focus { border-color: #10b981; outline: none; box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15); background: rgba(15, 23, 42, 0.9); color: #10ff88; }
+    .btn-calc { background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%); color: white; border: none; padding: 16px; border-radius: 12px; width: 100%; font-size: 1.05rem; font-weight: 700; cursor: pointer; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; gap: 12px; position: relative; overflow: hidden; box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3); }
+    .spinner { width: 16px; height: 16px; border: 2px solid rgba(255, 255, 255, 0.2); border-top-color: white; border-radius: 50%; animation: spin 0.8s linear infinite; display: none; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .spinner.active { display: block; }
+    #results-summary { margin-top: 32px; padding: 32px; border-radius: 16px; background: linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(6, 182, 212, 0.12) 100%); border: 1px solid rgba(16, 185, 129, 0.4); color: #e8ebf0; text-align: center; display: none; animation: scaleIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1); box-shadow: 0 0 30px rgba(16, 185, 129, 0.15); }
+    @keyframes scaleIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+    .day-card { margin-top: 28px; background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(26, 46, 42, 0.8) 100%); border-radius: 18px; border: 1px solid rgba(16, 185, 129, 0.2); overflow: hidden; animation: slideUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; opacity: 0; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); transition: all 0.3s ease; }
+    .day-title { background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%); color: white; padding: 20px; font-weight: 800; text-align: center; font-size: 1.3rem; letter-spacing: 0.5px; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); }
+    .meal-row { padding: 24px; border-bottom: 1px solid rgba(16, 185, 129, 0.1); }
+    .meal-row:last-child { border-bottom: none; }
+    .meal-name { color: #10ff88; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+    .meal-emoji { font-size: 1.6rem; }
+    .food-option { padding: 14px 16px; background: rgba(16, 185, 129, 0.08); border-radius: 10px; border-left: 3px solid #10b981; font-size: 0.95rem; font-weight: 600; color: #e8ebf0; transition: all 0.3s ease; display: flex; justify-content: space-between; align-items: center; }
+    .food-option:hover { background: rgba(16, 185, 129, 0.15); border-left-color: #06b6d4; transform: translateX(6px); box-shadow: 0 0 15px rgba(16, 185, 129, 0.2); }
+    .food-text { flex: 1; font-size: 0.9rem; }
+    .food-kcal { background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%); color: white; padding: 5px 12px; border-radius: 8px; font-size: 0.8rem; font-weight: 700; white-space: nowrap; margin-left: 12px; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3); }
+    .tooltip { display: none; position: absolute; bottom: 100%; left: 0; background: linear-gradient(135deg, rgba(15, 23, 42, 0.98) 0%, rgba(26, 46, 42, 0.98) 100%); border: 1px solid rgba(16, 185, 129, 0.6); border-radius: 10px; padding: 14px; font-size: 0.85rem; color: #e8ebf0; z-index: 1000; min-width: 280px; max-width: 320px; margin-bottom: 8px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); line-height: 1.5; font-weight: 500; animation: popIn 0.2s ease-out; }
+    .info-btn:hover .tooltip { display: block; }
+  </style>
 </head>
-
 <body>
+  <div class="wrapper">
+    <h1 id="app-title">Smart Meal Planner Pro</h1>
+    <p class="subtitle">Planul nutrițional personalizat în 60 de secunde</p>
+    <div class="grid-inputs">
+      <!-- Inputuri aici (sex, greutate, înălțime, vârstă, activitate, mese, obiectiv) -->
+      <div class="input-group"><label for="sex">Sex</label><select id="sex"><option value="m">Masculin</option><option value="f">Feminin</option></select></div>
+      <div class="input-group"><label for="w">Greutate (kg)</label><input type="number" id="w" value="75" min="30" max="200"></div>
+      <div class="input-group"><label for="h">Înălțime (cm)</label><input type="number" id="h" value="180" min="140" max="230"></div>
+      <div class="input-group"><label for="age">Vârstă</label><input type="number" id="age" value="30" min="15" max="100"></div>
+      <div class="input-group"><label for="act">Activitate</label><select id="act"><option value="1.2">Sedentar</option><option value="1.375">Ușor Activ</option><option value="1.55">Moderat</option><option value="1.725">Intens</option></select></div>
+      <div class="input-group"><label for="mCount">Nr. Mese</label><select id="mCount"><option value="3">3 Mese</option><option value="4">4 Mese</option><option value="5">5 Mese</option></select></div>
+      <div class="input-group"><label for="goal">Obiectiv</label><select id="goal"><option value="loss">📉 Scădere Greutate</option><option value="maintain">➡️ Menținere</option><option value="muscle">📈 Masă Musculară</option></select></div>
+    </div>
+    <div class="allergy-section">
+      <label>⚠️ Excludere Alergeni:</label>
+      <div class="allergy-grid" id="allergens">
+        <label class="check-item"><input type="checkbox" value="lactoza"> Lactoză</label>
+        <label class="check-item"><input type="checkbox" value="gluten"> Gluten</label>
+        <label class="check-item"><input type="checkbox" value="ou"> Ouă</label>
+        <label class="check-item"><input type="checkbox" value="nuci"> Nuci</label>
+        <label class="check-item"><input type="checkbox" value="peste"> Pește</label>
+        <label class="check-item"><input type="checkbox" value="soia"> Soia</label>
+      </div>
+    </div>
+    <button class="btn-calc" onclick="generate()" id="calc-btn">
+      <span class="spinner" id="spinner"></span>
+      <span id="btn-text">CALCULEAZĂ PLANUL DE MASĂ</span>
+    </button>
+    <div id="results-summary"></div>
+    <div id="plan-container"></div>
+  </div>
 
-<div class="container">
+  <script>
+    const mealEmojis = {
+      "Mic Dejun": "🌅", "Gustare 1": "🍎", "Prânz": "☀️", "Gustare 2": "🥤", "Cină": "🌙"
+    };
 
-<h1>Meal Planner</h1>
+    // Exemplu simplificat de DB pentru teste
+    const db = {
+      mic_dejun: [
+        { n: "Ouă ochiuri cu bacon", a: ["ou"], kcal: 380 },
+        { n: "Terci de ovăz", a: ["gluten", "lactoza"], kcal: 320 }
+      ],
+      pranz: [
+        { n: "Piept de pui cu quinoa", a: [], kcal: 520 },
+        { n: "Somon cu broccoli", a: ["peste"], kcal: 550 }
+      ],
+      cina: [
+        { n: "Salată cu pui", a: [], kcal: 480 },
+        { n: "Tofu cu legume", a: ["soia"], kcal: 450 }
+      ],
+      gustare: [
+        { n: "Măr", a: [], kcal: 80 },
+        { n: "Iaurt", a: ["lactoza"], kcal: 120 }
+      ]
+    };
 
-<button onclick="generateMealPlan()">
-Generează Planul
-</button>
+    function generate() {
+      const spinner = document.getElementById("spinner");
+      const btnText = document.getElementById("btn-text");
+      spinner.classList.add("active");
+      btnText.textContent = "Se generează...";
 
-<div id="meals"></div>
+      setTimeout(() => {
+        spinner.classList.remove("active");
+        btnText.textContent = "CALCULEAZĂ PLANUL DE MASĂ";
 
-<div class="macros" id="totals"></div>
+        const exclusions = Array.from(document.querySelectorAll("#allergens input:checked")).map(el => el.value);
+        const days = 7;
+        const planContainer = document.getElementById("plan-container");
+        planContainer.innerHTML = "";
 
-</div>
+        for (let d = 1; d <= days; d++) {
+          const dayCard = document.createElement("div");
+          dayCard.className = "day-card";
+          dayCard.innerHTML = `<div class="day-title">Ziua ${d}</div>`;
+          planContainer.appendChild(dayCard);
 
-<script>
+          ["Mic Dejun", "Gustare 1", "Prânz", "Gustare 2", "Cină"].forEach(meal => {
+            const mealKey = meal.toLowerCase().replace(" ", "_");
+            const options = db[mealKey].filter(item => !item.a.some(a => exclusions.includes(a)));
+            const chosen = options[Math.floor(Math.random() * options.length)];
+            if (chosen) {
+              const mealRow = document.createElement("div");
+              mealRow.className = "meal-row";
+              mealRow.innerHTML = `<div class="meal-name">${mealEmojis[meal]} ${meal}</div>
+                <div class="food-option">
+                  <span class="food-text">${chosen.n}</span>
+                  <span class="food-kcal">${chosen.kcal} kcal</span>
+                </div>`;
+              dayCard.appendChild(mealRow);
+            }
+          });
+        }
 
-let db = {};
-
-fetch("foods_520_database.json")
-.then(res=>res.json())
-.then(data=>{
-db=data;
-console.log("Database loaded",db);
-});
-
-function randomItem(arr){
-return arr[Math.floor(Math.random()*arr.length)];
-}
-
-function generateMealPlan(){
-
-const breakfast=randomItem(db.mic_dejun);
-const lunch=randomItem(db.pranz);
-const dinner=randomItem(db.cina);
-const snack=randomItem(db.gustare);
-
-const meals=[
-
-["Mic Dejun",breakfast],
-["Prânz",lunch],
-["Cină",dinner],
-["Gustare",snack]
-
-];
-
-let html="";
-let totalKcal=0;
-let totalP=0;
-let totalF=0;
-let totalC=0;
-
-meals.forEach(m=>{
-
-const meal=m[1];
-
-totalKcal+=meal.kcal;
-totalP+=meal.p;
-totalF+=meal.f;
-totalC+=meal.c;
-
-html+=`
-<div class="meal">
-<h3>${m[0]}</h3>
-<p><b>${meal.n}</b></p>
-<p>Calorii: ${meal.kcal}</p>
-<p>Proteine: ${meal.p}g</p>
-<p>Grăsimi: ${meal.f}g</p>
-<p>Carbohidrați: ${meal.c}g</p>
-</div>
-`;
-
-});
-
-document.getElementById("meals").innerHTML=html;
-
-document.getElementById("totals").innerHTML=`
-Total calorii: ${totalKcal} kcal<br>
-Proteine: ${totalP} g<br>
-Grăsimi: ${totalF} g<br>
-Carbohidrați: ${totalC} g
-`;
-
-}
-
-</script>
-
+        document.getElementById("results-summary").style.display = "block";
+        document.getElementById("results-summary").innerHTML = `<h2>Plan generat cu succes!</h2><p>Vezi meniul de mai jos.</p>`;
+      }, 1000);
+    }
+  </script>
 </body>
 </html>
