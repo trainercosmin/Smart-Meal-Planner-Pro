@@ -1,0 +1,4953 @@
+{
+  "mic_dejun": [
+    {
+      "n": "iaurt cu fructe",
+      "a": [],
+      "kcal": 332,
+      "p": 38,
+      "f": 11,
+      "c": 69
+    },
+    {
+      "n": "iaurt cu granola",
+      "a": [
+        "soia"
+      ],
+      "kcal": 467,
+      "p": 3,
+      "f": 30,
+      "c": 71
+    },
+    {
+      "n": "oua fierte",
+      "a": [],
+      "kcal": 238,
+      "p": 36,
+      "f": 16,
+      "c": 19
+    },
+    {
+      "n": "sandwich mic dejun cu branza",
+      "a": [],
+      "kcal": 631,
+      "p": 44,
+      "f": 8,
+      "c": 76
+    },
+    {
+      "n": "sandwich mic dejun cu sunca",
+      "a": [
+        "peste"
+      ],
+      "kcal": 506,
+      "p": 41,
+      "f": 22,
+      "c": 79
+    },
+    {
+      "n": "cereale integrale cu iaurt",
+      "a": [],
+      "kcal": 446,
+      "p": 32,
+      "f": 22,
+      "c": 43
+    },
+    {
+      "n": "cereale cu lapte",
+      "a": [
+        "peste"
+      ],
+      "kcal": 262,
+      "p": 32,
+      "f": 22,
+      "c": 52
+    },
+    {
+      "n": "toast cu ou",
+      "a": [
+        "arahide",
+        "nuci"
+      ],
+      "kcal": 342,
+      "p": 24,
+      "f": 30,
+      "c": 42
+    },
+    {
+      "n": "smoothie banana",
+      "a": [
+        "peste"
+      ],
+      "kcal": 505,
+      "p": 32,
+      "f": 3,
+      "c": 35
+    },
+    {
+      "n": "smoothie banana",
+      "a": [
+        "peste",
+        "soia"
+      ],
+      "kcal": 109,
+      "p": 6,
+      "f": 3,
+      "c": 69
+    },
+    {
+      "n": "smoothie proteic",
+      "a": [
+        "nuci"
+      ],
+      "kcal": 495,
+      "p": 9,
+      "f": 12,
+      "c": 70
+    },
+    {
+      "n": "sandwich mic dejun cu sunca",
+      "a": [
+        "peste"
+      ],
+      "kcal": 159,
+      "p": 2,
+      "f": 29,
+      "c": 38
+    },
+    {
+      "n": "budinca de chia",
+      "a": [
+        "nuci"
+      ],
+      "kcal": 462,
+      "p": 4,
+      "f": 22,
+      "c": 30
+    },
+    {
+      "n": "omleta cu spanac",
+      "a": [],
+      "kcal": 181,
+      "p": 28,
+      "f": 8,
+      "c": 69
+    },
+    {
+      "n": "toast cu avocado",
+      "a": [],
+      "kcal": 451,
+      "p": 22,
+      "f": 21,
+      "c": 15
+    },
+    {
+      "n": "cereale cu lapte",
+      "a": [
+        "lactoza",
+        "nuci"
+      ],
+      "kcal": 300,
+      "p": 19,
+      "f": 2,
+      "c": 37
+    },
+    {
+      "n": "clatite cu banana",
+      "a": [
+        "gluten"
+      ],
+      "kcal": 486,
+      "p": 36,
+      "f": 29,
+      "c": 17
+    },
+    {
+      "n": "oua fierte",
+      "a": [
+        "nuci",
+        "soia"
+      ],
+      "kcal": 235,
+      "p": 43,
+      "f": 9,
+      "c": 79
+    },
+    {
+      "n": "clatite cu banana",
+      "a": [
+        "peste"
+      ],
+      "kcal": 228,
+      "p": 13,
+      "f": 16,
+      "c": 20
+    },
+    {
+      "n": "terci de ovaz cu banana",
+      "a": [
+        "nuci"
+      ],
+      "kcal": 184,
+      "p": 39,
+      "f": 1,
+      "c": 71
+    },
+    {
+      "n": "sandwich mic dejun cu branza",
+      "a": [
+        "gluten",
+        "lactoza"
+      ],
+      "kcal": 339,
+      "p": 25,
+      "f": 18,
+      "c": 24
+    },
+    {
+      "n": "ovaz cu iaurt",
+      "a": [
+        "soia"
+      ],
+      "kcal": 280,
+      "p": 8,
+      "f": 19,
+      "c": 22
+    },
+    {
+      "n": "ovaz cu iaurt",
+      "a": [
+        "peste"
+      ],
+      "kcal": 143,
+      "p": 14,
+      "f": 19,
+      "c": 49
+    },
+    {
+      "n": "sandwich mic dejun cu branza",
+      "a": [
+        "gluten"
+      ],
+      "kcal": 131,
+      "p": 8,
+      "f": 29,
+      "c": 77
+    },
+    {
+      "n": "sandwich mic dejun cu ou",
+      "a": [
+        "lactoza",
+        "ou"
+      ],
+      "kcal": 547,
+      "p": 8,
+      "f": 8,
+      "c": 14
+    },
+    {
+      "n": "terci de ovaz cu banana",
+      "a": [],
+      "kcal": 535,
+      "p": 11,
+      "f": 24,
+      "c": 23
+    },
+    {
+      "n": "cereale cu lapte",
+      "a": [],
+      "kcal": 556,
+      "p": 45,
+      "f": 17,
+      "c": 41
+    },
+    {
+      "n": "clatite cu branza",
+      "a": [
+        "peste",
+        "lactoza"
+      ],
+      "kcal": 636,
+      "p": 43,
+      "f": 13,
+      "c": 77
+    },
+    {
+      "n": "smoothie capsuni",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 114,
+      "p": 7,
+      "f": 1,
+      "c": 75
+    },
+    {
+      "n": "toast cu ou",
+      "a": [],
+      "kcal": 291,
+      "p": 38,
+      "f": 16,
+      "c": 69
+    },
+    {
+      "n": "clatite cu banana",
+      "a": [
+        "nuci",
+        "soia"
+      ],
+      "kcal": 577,
+      "p": 4,
+      "f": 24,
+      "c": 63
+    },
+    {
+      "n": "omleta simpla",
+      "a": [
+        "soia"
+      ],
+      "kcal": 418,
+      "p": 11,
+      "f": 27,
+      "c": 40
+    },
+    {
+      "n": "iaurt cu granola",
+      "a": [
+        "peste",
+        "nuci"
+      ],
+      "kcal": 530,
+      "p": 35,
+      "f": 0,
+      "c": 50
+    },
+    {
+      "n": "clatite proteice",
+      "a": [
+        "peste"
+      ],
+      "kcal": 476,
+      "p": 38,
+      "f": 9,
+      "c": 58
+    },
+    {
+      "n": "toast cu unt de arahide",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 245,
+      "p": 32,
+      "f": 21,
+      "c": 45
+    },
+    {
+      "n": "toast cu ou",
+      "a": [
+        "ou",
+        "arahide"
+      ],
+      "kcal": 642,
+      "p": 41,
+      "f": 3,
+      "c": 13
+    },
+    {
+      "n": "clatite proteice",
+      "a": [
+        "ou"
+      ],
+      "kcal": 448,
+      "p": 35,
+      "f": 9,
+      "c": 73
+    },
+    {
+      "n": "sandwich mic dejun cu branza",
+      "a": [
+        "lactoza",
+        "soia"
+      ],
+      "kcal": 413,
+      "p": 23,
+      "f": 21,
+      "c": 50
+    },
+    {
+      "n": "sandwich mic dejun cu ou",
+      "a": [
+        "gluten"
+      ],
+      "kcal": 552,
+      "p": 31,
+      "f": 21,
+      "c": 56
+    },
+    {
+      "n": "clatite proteice",
+      "a": [
+        "nuci",
+        "lactoza"
+      ],
+      "kcal": 636,
+      "p": 13,
+      "f": 4,
+      "c": 79
+    },
+    {
+      "n": "toast cu branza",
+      "a": [
+        "peste",
+        "ou"
+      ],
+      "kcal": 622,
+      "p": 18,
+      "f": 1,
+      "c": 34
+    },
+    {
+      "n": "omleta simpla",
+      "a": [
+        "nuci",
+        "peste"
+      ],
+      "kcal": 470,
+      "p": 35,
+      "f": 23,
+      "c": 22
+    },
+    {
+      "n": "clatite cu banana",
+      "a": [],
+      "kcal": 610,
+      "p": 43,
+      "f": 14,
+      "c": 43
+    },
+    {
+      "n": "toast cu unt de arahide",
+      "a": [
+        "arahide"
+      ],
+      "kcal": 373,
+      "p": 8,
+      "f": 17,
+      "c": 37
+    },
+    {
+      "n": "oua ochiuri",
+      "a": [
+        "arahide",
+        "gluten"
+      ],
+      "kcal": 442,
+      "p": 8,
+      "f": 11,
+      "c": 36
+    },
+    {
+      "n": "toast cu branza",
+      "a": [
+        "lactoza",
+        "ou"
+      ],
+      "kcal": 454,
+      "p": 31,
+      "f": 13,
+      "c": 67
+    },
+    {
+      "n": "smoothie mango",
+      "a": [
+        "arahide",
+        "nuci"
+      ],
+      "kcal": 325,
+      "p": 36,
+      "f": 20,
+      "c": 68
+    },
+    {
+      "n": "clatite cu banana",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 501,
+      "p": 22,
+      "f": 13,
+      "c": 15
+    },
+    {
+      "n": "iaurt grecesc cu miere",
+      "a": [
+        "nuci"
+      ],
+      "kcal": 496,
+      "p": 24,
+      "f": 16,
+      "c": 42
+    },
+    {
+      "n": "iaurt cu fructe",
+      "a": [
+        "gluten"
+      ],
+      "kcal": 215,
+      "p": 9,
+      "f": 0,
+      "c": 19
+    },
+    {
+      "n": "ovaz cu lapte",
+      "a": [
+        "ou"
+      ],
+      "kcal": 138,
+      "p": 28,
+      "f": 29,
+      "c": 36
+    },
+    {
+      "n": "toast cu avocado",
+      "a": [],
+      "kcal": 505,
+      "p": 25,
+      "f": 6,
+      "c": 80
+    },
+    {
+      "n": "sandwich mic dejun cu ou",
+      "a": [
+        "nuci",
+        "lactoza"
+      ],
+      "kcal": 215,
+      "p": 23,
+      "f": 22,
+      "c": 22
+    },
+    {
+      "n": "terci de ovaz cu banana",
+      "a": [],
+      "kcal": 314,
+      "p": 20,
+      "f": 20,
+      "c": 64
+    },
+    {
+      "n": "clatite proteice",
+      "a": [
+        "ou"
+      ],
+      "kcal": 143,
+      "p": 44,
+      "f": 5,
+      "c": 7
+    },
+    {
+      "n": "iaurt grecesc cu nuci",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 127,
+      "p": 21,
+      "f": 6,
+      "c": 30
+    },
+    {
+      "n": "smoothie proteic",
+      "a": [
+        "arahide",
+        "peste"
+      ],
+      "kcal": 632,
+      "p": 36,
+      "f": 17,
+      "c": 41
+    },
+    {
+      "n": "sandwich mic dejun cu sunca",
+      "a": [],
+      "kcal": 493,
+      "p": 19,
+      "f": 0,
+      "c": 47
+    },
+    {
+      "n": "omleta simpla",
+      "a": [
+        "nuci"
+      ],
+      "kcal": 591,
+      "p": 14,
+      "f": 24,
+      "c": 49
+    },
+    {
+      "n": "ovaz cu lapte",
+      "a": [
+        "peste",
+        "gluten"
+      ],
+      "kcal": 314,
+      "p": 4,
+      "f": 22,
+      "c": 28
+    },
+    {
+      "n": "ovaz cu iaurt",
+      "a": [
+        "ou"
+      ],
+      "kcal": 191,
+      "p": 39,
+      "f": 2,
+      "c": 20
+    },
+    {
+      "n": "toast cu unt de arahide",
+      "a": [],
+      "kcal": 406,
+      "p": 26,
+      "f": 28,
+      "c": 25
+    },
+    {
+      "n": "sandwich mic dejun cu sunca",
+      "a": [],
+      "kcal": 398,
+      "p": 40,
+      "f": 16,
+      "c": 38
+    },
+    {
+      "n": "sandwich mic dejun cu branza",
+      "a": [
+        "nuci",
+        "gluten"
+      ],
+      "kcal": 469,
+      "p": 19,
+      "f": 7,
+      "c": 70
+    },
+    {
+      "n": "clatite cu banana",
+      "a": [],
+      "kcal": 100,
+      "p": 3,
+      "f": 8,
+      "c": 67
+    },
+    {
+      "n": "omleta cu branza",
+      "a": [
+        "gluten"
+      ],
+      "kcal": 512,
+      "p": 4,
+      "f": 7,
+      "c": 78
+    },
+    {
+      "n": "omleta cu branza",
+      "a": [],
+      "kcal": 269,
+      "p": 2,
+      "f": 19,
+      "c": 59
+    },
+    {
+      "n": "clatite cu branza",
+      "a": [],
+      "kcal": 645,
+      "p": 5,
+      "f": 6,
+      "c": 48
+    },
+    {
+      "n": "iaurt cu granola",
+      "a": [],
+      "kcal": 275,
+      "p": 37,
+      "f": 11,
+      "c": 68
+    },
+    {
+      "n": "terci de ovaz cu fructe de padure",
+      "a": [],
+      "kcal": 633,
+      "p": 10,
+      "f": 6,
+      "c": 59
+    },
+    {
+      "n": "ovaz cu lapte",
+      "a": [],
+      "kcal": 410,
+      "p": 10,
+      "f": 5,
+      "c": 65
+    },
+    {
+      "n": "terci de ovaz cu banana",
+      "a": [
+        "ou"
+      ],
+      "kcal": 264,
+      "p": 5,
+      "f": 1,
+      "c": 60
+    },
+    {
+      "n": "omleta simpla",
+      "a": [
+        "peste",
+        "nuci"
+      ],
+      "kcal": 206,
+      "p": 4,
+      "f": 10,
+      "c": 71
+    },
+    {
+      "n": "omleta simpla",
+      "a": [],
+      "kcal": 588,
+      "p": 20,
+      "f": 16,
+      "c": 14
+    },
+    {
+      "n": "sandwich mic dejun cu ou",
+      "a": [
+        "gluten",
+        "arahide"
+      ],
+      "kcal": 632,
+      "p": 29,
+      "f": 11,
+      "c": 39
+    },
+    {
+      "n": "iaurt grecesc cu miere",
+      "a": [
+        "gluten"
+      ],
+      "kcal": 159,
+      "p": 27,
+      "f": 14,
+      "c": 33
+    },
+    {
+      "n": "iaurt grecesc cu miere",
+      "a": [
+        "ou"
+      ],
+      "kcal": 619,
+      "p": 32,
+      "f": 17,
+      "c": 44
+    },
+    {
+      "n": "omleta cu branza",
+      "a": [],
+      "kcal": 488,
+      "p": 22,
+      "f": 5,
+      "c": 16
+    },
+    {
+      "n": "iaurt cu fructe",
+      "a": [],
+      "kcal": 342,
+      "p": 39,
+      "f": 30,
+      "c": 34
+    },
+    {
+      "n": "toast cu avocado",
+      "a": [
+        "soia",
+        "peste"
+      ],
+      "kcal": 427,
+      "p": 23,
+      "f": 0,
+      "c": 33
+    },
+    {
+      "n": "iaurt grecesc cu miere",
+      "a": [
+        "soia",
+        "ou"
+      ],
+      "kcal": 358,
+      "p": 39,
+      "f": 12,
+      "c": 43
+    },
+    {
+      "n": "terci de ovaz cu fructe de padure",
+      "a": [
+        "gluten"
+      ],
+      "kcal": 229,
+      "p": 17,
+      "f": 30,
+      "c": 74
+    },
+    {
+      "n": "sandwich mic dejun cu ou",
+      "a": [],
+      "kcal": 637,
+      "p": 34,
+      "f": 29,
+      "c": 59
+    },
+    {
+      "n": "terci de ovaz cu banana",
+      "a": [
+        "ou",
+        "soia"
+      ],
+      "kcal": 241,
+      "p": 8,
+      "f": 1,
+      "c": 41
+    },
+    {
+      "n": "omleta cu spanac",
+      "a": [
+        "ou"
+      ],
+      "kcal": 445,
+      "p": 3,
+      "f": 1,
+      "c": 23
+    },
+    {
+      "n": "clatite cu banana",
+      "a": [
+        "ou",
+        "peste"
+      ],
+      "kcal": 348,
+      "p": 6,
+      "f": 1,
+      "c": 18
+    },
+    {
+      "n": "clatite proteice",
+      "a": [
+        "soia"
+      ],
+      "kcal": 375,
+      "p": 43,
+      "f": 13,
+      "c": 44
+    },
+    {
+      "n": "clatite cu branza",
+      "a": [],
+      "kcal": 423,
+      "p": 19,
+      "f": 20,
+      "c": 11
+    },
+    {
+      "n": "oua ochiuri",
+      "a": [],
+      "kcal": 648,
+      "p": 8,
+      "f": 8,
+      "c": 54
+    },
+    {
+      "n": "sandwich mic dejun cu ou",
+      "a": [
+        "arahide",
+        "soia"
+      ],
+      "kcal": 415,
+      "p": 30,
+      "f": 18,
+      "c": 58
+    },
+    {
+      "n": "clatite cu banana",
+      "a": [
+        "ou"
+      ],
+      "kcal": 559,
+      "p": 20,
+      "f": 12,
+      "c": 46
+    },
+    {
+      "n": "iaurt cu fructe",
+      "a": [],
+      "kcal": 639,
+      "p": 24,
+      "f": 4,
+      "c": 27
+    },
+    {
+      "n": "oua fierte",
+      "a": [
+        "ou"
+      ],
+      "kcal": 425,
+      "p": 25,
+      "f": 17,
+      "c": 45
+    },
+    {
+      "n": "oua ochiuri",
+      "a": [],
+      "kcal": 492,
+      "p": 26,
+      "f": 26,
+      "c": 42
+    },
+    {
+      "n": "smoothie proteic",
+      "a": [
+        "gluten"
+      ],
+      "kcal": 330,
+      "p": 6,
+      "f": 28,
+      "c": 41
+    },
+    {
+      "n": "sandwich mic dejun cu sunca",
+      "a": [
+        "soia"
+      ],
+      "kcal": 235,
+      "p": 27,
+      "f": 13,
+      "c": 77
+    },
+    {
+      "n": "iaurt cu granola",
+      "a": [
+        "ou"
+      ],
+      "kcal": 526,
+      "p": 43,
+      "f": 7,
+      "c": 14
+    },
+    {
+      "n": "iaurt cu granola",
+      "a": [
+        "arahide"
+      ],
+      "kcal": 447,
+      "p": 7,
+      "f": 9,
+      "c": 23
+    },
+    {
+      "n": "terci de ovaz cu fructe de padure",
+      "a": [
+        "peste"
+      ],
+      "kcal": 605,
+      "p": 19,
+      "f": 19,
+      "c": 55
+    },
+    {
+      "n": "smoothie mango",
+      "a": [],
+      "kcal": 565,
+      "p": 11,
+      "f": 9,
+      "c": 62
+    },
+    {
+      "n": "clatite proteice",
+      "a": [],
+      "kcal": 622,
+      "p": 18,
+      "f": 4,
+      "c": 64
+    },
+    {
+      "n": "budinca de chia",
+      "a": [
+        "soia",
+        "arahide"
+      ],
+      "kcal": 115,
+      "p": 34,
+      "f": 30,
+      "c": 37
+    },
+    {
+      "n": "omleta cu spanac",
+      "a": [
+        "lactoza",
+        "gluten"
+      ],
+      "kcal": 427,
+      "p": 34,
+      "f": 20,
+      "c": 72
+    },
+    {
+      "n": "terci de ovaz cu fructe de padure",
+      "a": [],
+      "kcal": 378,
+      "p": 45,
+      "f": 0,
+      "c": 59
+    },
+    {
+      "n": "smoothie proteic",
+      "a": [],
+      "kcal": 210,
+      "p": 26,
+      "f": 30,
+      "c": 8
+    },
+    {
+      "n": "clatite cu branza",
+      "a": [],
+      "kcal": 179,
+      "p": 4,
+      "f": 9,
+      "c": 59
+    },
+    {
+      "n": "sandwich mic dejun cu ou",
+      "a": [
+        "arahide"
+      ],
+      "kcal": 455,
+      "p": 2,
+      "f": 25,
+      "c": 76
+    },
+    {
+      "n": "smoothie mango",
+      "a": [
+        "gluten"
+      ],
+      "kcal": 497,
+      "p": 24,
+      "f": 18,
+      "c": 26
+    },
+    {
+      "n": "omleta cu spanac",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 341,
+      "p": 33,
+      "f": 20,
+      "c": 44
+    },
+    {
+      "n": "sandwich mic dejun cu ou",
+      "a": [
+        "peste",
+        "soia"
+      ],
+      "kcal": 318,
+      "p": 45,
+      "f": 6,
+      "c": 78
+    },
+    {
+      "n": "omleta cu branza",
+      "a": [],
+      "kcal": 383,
+      "p": 26,
+      "f": 17,
+      "c": 23
+    },
+    {
+      "n": "iaurt grecesc cu nuci",
+      "a": [
+        "ou"
+      ],
+      "kcal": 356,
+      "p": 8,
+      "f": 9,
+      "c": 66
+    },
+    {
+      "n": "sandwich mic dejun cu sunca",
+      "a": [],
+      "kcal": 139,
+      "p": 29,
+      "f": 2,
+      "c": 49
+    },
+    {
+      "n": "toast cu unt de arahide",
+      "a": [
+        "gluten"
+      ],
+      "kcal": 224,
+      "p": 14,
+      "f": 10,
+      "c": 60
+    },
+    {
+      "n": "omleta cu branza",
+      "a": [],
+      "kcal": 377,
+      "p": 9,
+      "f": 3,
+      "c": 56
+    },
+    {
+      "n": "oua fierte",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 415,
+      "p": 11,
+      "f": 1,
+      "c": 79
+    },
+    {
+      "n": "clatite cu branza",
+      "a": [
+        "arahide"
+      ],
+      "kcal": 335,
+      "p": 33,
+      "f": 4,
+      "c": 30
+    },
+    {
+      "n": "ovaz cu lapte",
+      "a": [
+        "lactoza",
+        "ou"
+      ],
+      "kcal": 501,
+      "p": 24,
+      "f": 27,
+      "c": 8
+    },
+    {
+      "n": "omleta cu spanac",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 152,
+      "p": 21,
+      "f": 15,
+      "c": 63
+    },
+    {
+      "n": "budinca de chia",
+      "a": [
+        "soia"
+      ],
+      "kcal": 485,
+      "p": 27,
+      "f": 19,
+      "c": 27
+    },
+    {
+      "n": "toast cu ou",
+      "a": [
+        "ou"
+      ],
+      "kcal": 273,
+      "p": 36,
+      "f": 24,
+      "c": 26
+    },
+    {
+      "n": "toast cu unt de arahide",
+      "a": [
+        "soia"
+      ],
+      "kcal": 281,
+      "p": 44,
+      "f": 16,
+      "c": 56
+    },
+    {
+      "n": "cereale cu lapte",
+      "a": [],
+      "kcal": 645,
+      "p": 7,
+      "f": 16,
+      "c": 50
+    },
+    {
+      "n": "toast cu branza",
+      "a": [
+        "gluten"
+      ],
+      "kcal": 412,
+      "p": 30,
+      "f": 4,
+      "c": 50
+    },
+    {
+      "n": "terci de ovaz cu banana",
+      "a": [],
+      "kcal": 219,
+      "p": 34,
+      "f": 9,
+      "c": 65
+    },
+    {
+      "n": "iaurt cu granola",
+      "a": [
+        "ou"
+      ],
+      "kcal": 425,
+      "p": 40,
+      "f": 14,
+      "c": 55
+    },
+    {
+      "n": "toast cu avocado",
+      "a": [
+        "gluten"
+      ],
+      "kcal": 456,
+      "p": 29,
+      "f": 8,
+      "c": 32
+    },
+    {
+      "n": "ovaz cu lapte",
+      "a": [
+        "peste",
+        "arahide"
+      ],
+      "kcal": 124,
+      "p": 29,
+      "f": 1,
+      "c": 61
+    },
+    {
+      "n": "smoothie capsuni",
+      "a": [
+        "peste",
+        "ou"
+      ],
+      "kcal": 533,
+      "p": 21,
+      "f": 16,
+      "c": 74
+    },
+    {
+      "n": "iaurt grecesc cu nuci",
+      "a": [
+        "soia"
+      ],
+      "kcal": 399,
+      "p": 13,
+      "f": 24,
+      "c": 36
+    }
+  ],
+  "pranz": [
+    {
+      "n": "somon cu cartofi",
+      "a": [
+        "peste"
+      ],
+      "kcal": 155,
+      "p": 23,
+      "f": 0,
+      "c": 52
+    },
+    {
+      "n": "paste cu pui",
+      "a": [
+        "nuci"
+      ],
+      "kcal": 348,
+      "p": 17,
+      "f": 17,
+      "c": 55
+    },
+    {
+      "n": "somon cu orez",
+      "a": [
+        "nuci"
+      ],
+      "kcal": 536,
+      "p": 29,
+      "f": 8,
+      "c": 51
+    },
+    {
+      "n": "burger de vita",
+      "a": [
+        "nuci",
+        "arahide"
+      ],
+      "kcal": 91,
+      "p": 41,
+      "f": 5,
+      "c": 50
+    },
+    {
+      "n": "piept de pui cu orez",
+      "a": [
+        "gluten",
+        "lactoza"
+      ],
+      "kcal": 483,
+      "p": 35,
+      "f": 6,
+      "c": 66
+    },
+    {
+      "n": "paste carbonara",
+      "a": [],
+      "kcal": 564,
+      "p": 40,
+      "f": 5,
+      "c": 54
+    },
+    {
+      "n": "piept de pui cu cartofi",
+      "a": [
+        "arahide",
+        "soia"
+      ],
+      "kcal": 393,
+      "p": 27,
+      "f": 20,
+      "c": 78
+    },
+    {
+      "n": "somon cu sparanghel",
+      "a": [
+        "lactoza",
+        "soia"
+      ],
+      "kcal": 486,
+      "p": 33,
+      "f": 9,
+      "c": 35
+    },
+    {
+      "n": "salata caesar cu pui",
+      "a": [],
+      "kcal": 408,
+      "p": 7,
+      "f": 24,
+      "c": 12
+    },
+    {
+      "n": "tocana de pui",
+      "a": [],
+      "kcal": 428,
+      "p": 22,
+      "f": 26,
+      "c": 28
+    },
+    {
+      "n": "salata greceasca",
+      "a": [
+        "nuci"
+      ],
+      "kcal": 133,
+      "p": 26,
+      "f": 3,
+      "c": 40
+    },
+    {
+      "n": "wrap cu pui",
+      "a": [],
+      "kcal": 329,
+      "p": 36,
+      "f": 2,
+      "c": 76
+    },
+    {
+      "n": "pui cu legume la wok",
+      "a": [],
+      "kcal": 204,
+      "p": 37,
+      "f": 13,
+      "c": 41
+    },
+    {
+      "n": "tocana de legume",
+      "a": [
+        "arahide"
+      ],
+      "kcal": 460,
+      "p": 12,
+      "f": 8,
+      "c": 74
+    },
+    {
+      "n": "somon cu sparanghel",
+      "a": [],
+      "kcal": 378,
+      "p": 33,
+      "f": 29,
+      "c": 68
+    },
+    {
+      "n": "paste cu pui",
+      "a": [
+        "peste"
+      ],
+      "kcal": 141,
+      "p": 34,
+      "f": 8,
+      "c": 14
+    },
+    {
+      "n": "orez cu legume",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 192,
+      "p": 36,
+      "f": 5,
+      "c": 29
+    },
+    {
+      "n": "pui la gratar cu salata",
+      "a": [],
+      "kcal": 242,
+      "p": 13,
+      "f": 25,
+      "c": 44
+    },
+    {
+      "n": "tocana de legume",
+      "a": [
+        "peste",
+        "arahide"
+      ],
+      "kcal": 525,
+      "p": 29,
+      "f": 17,
+      "c": 67
+    },
+    {
+      "n": "piept de pui cu orez",
+      "a": [
+        "ou"
+      ],
+      "kcal": 572,
+      "p": 22,
+      "f": 4,
+      "c": 65
+    },
+    {
+      "n": "salata caesar cu pui",
+      "a": [
+        "arahide",
+        "peste"
+      ],
+      "kcal": 576,
+      "p": 11,
+      "f": 16,
+      "c": 42
+    },
+    {
+      "n": "tocana de vita",
+      "a": [],
+      "kcal": 351,
+      "p": 42,
+      "f": 18,
+      "c": 50
+    },
+    {
+      "n": "wrap cu ton",
+      "a": [
+        "gluten",
+        "arahide"
+      ],
+      "kcal": 642,
+      "p": 16,
+      "f": 22,
+      "c": 8
+    },
+    {
+      "n": "quinoa cu legume",
+      "a": [],
+      "kcal": 382,
+      "p": 33,
+      "f": 9,
+      "c": 51
+    },
+    {
+      "n": "tocana de legume",
+      "a": [],
+      "kcal": 95,
+      "p": 39,
+      "f": 4,
+      "c": 55
+    },
+    {
+      "n": "orez cu legume",
+      "a": [
+        "nuci"
+      ],
+      "kcal": 315,
+      "p": 5,
+      "f": 2,
+      "c": 48
+    },
+    {
+      "n": "tocana de legume",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 447,
+      "p": 30,
+      "f": 6,
+      "c": 64
+    },
+    {
+      "n": "orez cu pui",
+      "a": [
+        "arahide"
+      ],
+      "kcal": 168,
+      "p": 43,
+      "f": 2,
+      "c": 69
+    },
+    {
+      "n": "burger de pui",
+      "a": [
+        "nuci"
+      ],
+      "kcal": 397,
+      "p": 30,
+      "f": 0,
+      "c": 63
+    },
+    {
+      "n": "orez cu pui",
+      "a": [
+        "nuci"
+      ],
+      "kcal": 467,
+      "p": 21,
+      "f": 1,
+      "c": 30
+    },
+    {
+      "n": "tocana de legume",
+      "a": [
+        "arahide",
+        "gluten"
+      ],
+      "kcal": 560,
+      "p": 9,
+      "f": 26,
+      "c": 36
+    },
+    {
+      "n": "tocana de pui",
+      "a": [
+        "gluten",
+        "arahide"
+      ],
+      "kcal": 396,
+      "p": 19,
+      "f": 3,
+      "c": 10
+    },
+    {
+      "n": "paste carbonara",
+      "a": [
+        "peste",
+        "nuci"
+      ],
+      "kcal": 295,
+      "p": 38,
+      "f": 26,
+      "c": 17
+    },
+    {
+      "n": "wrap cu pui",
+      "a": [
+        "soia",
+        "gluten"
+      ],
+      "kcal": 374,
+      "p": 34,
+      "f": 20,
+      "c": 62
+    },
+    {
+      "n": "orez cu legume",
+      "a": [
+        "gluten",
+        "soia"
+      ],
+      "kcal": 590,
+      "p": 23,
+      "f": 13,
+      "c": 64
+    },
+    {
+      "n": "orez cu legume",
+      "a": [
+        "gluten",
+        "peste"
+      ],
+      "kcal": 434,
+      "p": 38,
+      "f": 13,
+      "c": 28
+    },
+    {
+      "n": "orez cu pui",
+      "a": [
+        "lactoza",
+        "ou"
+      ],
+      "kcal": 235,
+      "p": 9,
+      "f": 19,
+      "c": 60
+    },
+    {
+      "n": "pui cu legume la wok",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 282,
+      "p": 11,
+      "f": 2,
+      "c": 6
+    },
+    {
+      "n": "pui la gratar cu salata",
+      "a": [
+        "lactoza",
+        "ou"
+      ],
+      "kcal": 277,
+      "p": 11,
+      "f": 7,
+      "c": 39
+    },
+    {
+      "n": "pui cu legume la wok",
+      "a": [],
+      "kcal": 522,
+      "p": 25,
+      "f": 14,
+      "c": 6
+    },
+    {
+      "n": "paste bolognese",
+      "a": [
+        "peste",
+        "lactoza"
+      ],
+      "kcal": 469,
+      "p": 16,
+      "f": 27,
+      "c": 50
+    },
+    {
+      "n": "burger de curcan",
+      "a": [
+        "nuci"
+      ],
+      "kcal": 171,
+      "p": 31,
+      "f": 18,
+      "c": 55
+    },
+    {
+      "n": "orez cu legume",
+      "a": [
+        "ou"
+      ],
+      "kcal": 209,
+      "p": 15,
+      "f": 0,
+      "c": 79
+    },
+    {
+      "n": "orez cu pui",
+      "a": [
+        "peste"
+      ],
+      "kcal": 632,
+      "p": 27,
+      "f": 14,
+      "c": 45
+    },
+    {
+      "n": "tocana de pui",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 304,
+      "p": 2,
+      "f": 27,
+      "c": 80
+    },
+    {
+      "n": "piept de pui cu orez",
+      "a": [
+        "arahide",
+        "gluten"
+      ],
+      "kcal": 405,
+      "p": 39,
+      "f": 13,
+      "c": 46
+    },
+    {
+      "n": "wrap cu pui",
+      "a": [],
+      "kcal": 533,
+      "p": 5,
+      "f": 3,
+      "c": 17
+    },
+    {
+      "n": "piept de pui cu cartofi",
+      "a": [
+        "peste",
+        "gluten"
+      ],
+      "kcal": 521,
+      "p": 26,
+      "f": 12,
+      "c": 13
+    },
+    {
+      "n": "tocana de pui",
+      "a": [],
+      "kcal": 508,
+      "p": 3,
+      "f": 23,
+      "c": 16
+    },
+    {
+      "n": "tocana de vita",
+      "a": [],
+      "kcal": 294,
+      "p": 19,
+      "f": 11,
+      "c": 65
+    },
+    {
+      "n": "somon cu orez",
+      "a": [
+        "peste"
+      ],
+      "kcal": 141,
+      "p": 26,
+      "f": 23,
+      "c": 79
+    },
+    {
+      "n": "orez cu legume",
+      "a": [],
+      "kcal": 566,
+      "p": 23,
+      "f": 8,
+      "c": 79
+    },
+    {
+      "n": "quinoa cu legume",
+      "a": [],
+      "kcal": 167,
+      "p": 19,
+      "f": 9,
+      "c": 25
+    },
+    {
+      "n": "wrap cu pui",
+      "a": [
+        "soia",
+        "nuci"
+      ],
+      "kcal": 485,
+      "p": 5,
+      "f": 17,
+      "c": 5
+    },
+    {
+      "n": "piept de pui cu cartofi",
+      "a": [
+        "ou"
+      ],
+      "kcal": 280,
+      "p": 16,
+      "f": 24,
+      "c": 47
+    },
+    {
+      "n": "somon cu orez",
+      "a": [
+        "lactoza",
+        "peste"
+      ],
+      "kcal": 639,
+      "p": 2,
+      "f": 18,
+      "c": 77
+    },
+    {
+      "n": "orez cu ton",
+      "a": [
+        "nuci",
+        "gluten"
+      ],
+      "kcal": 215,
+      "p": 20,
+      "f": 15,
+      "c": 74
+    },
+    {
+      "n": "tocana de vita",
+      "a": [
+        "gluten"
+      ],
+      "kcal": 507,
+      "p": 10,
+      "f": 25,
+      "c": 43
+    },
+    {
+      "n": "quinoa cu pui",
+      "a": [
+        "lactoza",
+        "ou"
+      ],
+      "kcal": 379,
+      "p": 27,
+      "f": 26,
+      "c": 63
+    },
+    {
+      "n": "somon cu sparanghel",
+      "a": [
+        "gluten"
+      ],
+      "kcal": 625,
+      "p": 30,
+      "f": 8,
+      "c": 22
+    },
+    {
+      "n": "salata caesar cu pui",
+      "a": [],
+      "kcal": 252,
+      "p": 9,
+      "f": 4,
+      "c": 45
+    },
+    {
+      "n": "piept de pui cu cartofi",
+      "a": [],
+      "kcal": 245,
+      "p": 45,
+      "f": 27,
+      "c": 15
+    },
+    {
+      "n": "burger de vita",
+      "a": [],
+      "kcal": 285,
+      "p": 30,
+      "f": 0,
+      "c": 78
+    },
+    {
+      "n": "tocana de pui",
+      "a": [],
+      "kcal": 452,
+      "p": 31,
+      "f": 26,
+      "c": 18
+    },
+    {
+      "n": "wrap cu pui",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 278,
+      "p": 32,
+      "f": 10,
+      "c": 67
+    },
+    {
+      "n": "salata caesar cu pui",
+      "a": [],
+      "kcal": 548,
+      "p": 9,
+      "f": 16,
+      "c": 50
+    },
+    {
+      "n": "piept de pui cu cartofi",
+      "a": [],
+      "kcal": 214,
+      "p": 16,
+      "f": 9,
+      "c": 51
+    },
+    {
+      "n": "paste carbonara",
+      "a": [],
+      "kcal": 236,
+      "p": 37,
+      "f": 14,
+      "c": 32
+    },
+    {
+      "n": "tocana de vita",
+      "a": [
+        "lactoza",
+        "ou"
+      ],
+      "kcal": 228,
+      "p": 10,
+      "f": 19,
+      "c": 22
+    },
+    {
+      "n": "somon cu sparanghel",
+      "a": [],
+      "kcal": 583,
+      "p": 18,
+      "f": 14,
+      "c": 59
+    },
+    {
+      "n": "burger de vita",
+      "a": [
+        "ou"
+      ],
+      "kcal": 332,
+      "p": 29,
+      "f": 3,
+      "c": 62
+    },
+    {
+      "n": "tocana de legume",
+      "a": [],
+      "kcal": 559,
+      "p": 34,
+      "f": 24,
+      "c": 14
+    },
+    {
+      "n": "pui la gratar cu salata",
+      "a": [
+        "ou"
+      ],
+      "kcal": 449,
+      "p": 22,
+      "f": 29,
+      "c": 57
+    },
+    {
+      "n": "somon cu sparanghel",
+      "a": [],
+      "kcal": 286,
+      "p": 34,
+      "f": 15,
+      "c": 65
+    },
+    {
+      "n": "burger de vita",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 544,
+      "p": 43,
+      "f": 10,
+      "c": 71
+    },
+    {
+      "n": "piept de pui cu quinoa",
+      "a": [
+        "nuci"
+      ],
+      "kcal": 555,
+      "p": 39,
+      "f": 22,
+      "c": 36
+    },
+    {
+      "n": "salata cu ton",
+      "a": [
+        "gluten"
+      ],
+      "kcal": 578,
+      "p": 41,
+      "f": 24,
+      "c": 77
+    },
+    {
+      "n": "somon cu cartofi",
+      "a": [],
+      "kcal": 529,
+      "p": 35,
+      "f": 29,
+      "c": 69
+    },
+    {
+      "n": "piept de pui cu cartofi",
+      "a": [
+        "nuci",
+        "soia"
+      ],
+      "kcal": 416,
+      "p": 44,
+      "f": 9,
+      "c": 18
+    },
+    {
+      "n": "salata cu ton",
+      "a": [],
+      "kcal": 192,
+      "p": 36,
+      "f": 5,
+      "c": 40
+    },
+    {
+      "n": "quinoa cu legume",
+      "a": [
+        "gluten",
+        "soia"
+      ],
+      "kcal": 174,
+      "p": 33,
+      "f": 19,
+      "c": 68
+    },
+    {
+      "n": "orez cu pui",
+      "a": [
+        "gluten",
+        "lactoza"
+      ],
+      "kcal": 577,
+      "p": 35,
+      "f": 29,
+      "c": 26
+    },
+    {
+      "n": "burger de curcan",
+      "a": [
+        "ou"
+      ],
+      "kcal": 364,
+      "p": 5,
+      "f": 27,
+      "c": 59
+    },
+    {
+      "n": "salata cu pui",
+      "a": [],
+      "kcal": 108,
+      "p": 2,
+      "f": 20,
+      "c": 12
+    },
+    {
+      "n": "tocana de vita",
+      "a": [
+        "arahide",
+        "soia"
+      ],
+      "kcal": 587,
+      "p": 40,
+      "f": 19,
+      "c": 68
+    },
+    {
+      "n": "burger de pui",
+      "a": [
+        "gluten"
+      ],
+      "kcal": 159,
+      "p": 14,
+      "f": 21,
+      "c": 6
+    },
+    {
+      "n": "piept de pui cu quinoa",
+      "a": [],
+      "kcal": 392,
+      "p": 40,
+      "f": 14,
+      "c": 29
+    },
+    {
+      "n": "piept de pui cu cartofi",
+      "a": [],
+      "kcal": 419,
+      "p": 9,
+      "f": 29,
+      "c": 22
+    },
+    {
+      "n": "quinoa cu legume",
+      "a": [
+        "peste",
+        "nuci"
+      ],
+      "kcal": 212,
+      "p": 11,
+      "f": 18,
+      "c": 11
+    },
+    {
+      "n": "pui la gratar cu salata",
+      "a": [
+        "arahide"
+      ],
+      "kcal": 134,
+      "p": 42,
+      "f": 30,
+      "c": 30
+    },
+    {
+      "n": "quinoa cu legume",
+      "a": [
+        "arahide",
+        "peste"
+      ],
+      "kcal": 327,
+      "p": 13,
+      "f": 22,
+      "c": 43
+    },
+    {
+      "n": "wrap cu pui",
+      "a": [
+        "ou"
+      ],
+      "kcal": 316,
+      "p": 29,
+      "f": 6,
+      "c": 76
+    },
+    {
+      "n": "piept de pui cu quinoa",
+      "a": [
+        "soia"
+      ],
+      "kcal": 529,
+      "p": 37,
+      "f": 12,
+      "c": 29
+    },
+    {
+      "n": "piept de pui cu orez",
+      "a": [
+        "nuci"
+      ],
+      "kcal": 576,
+      "p": 24,
+      "f": 19,
+      "c": 8
+    },
+    {
+      "n": "quinoa cu pui",
+      "a": [],
+      "kcal": 264,
+      "p": 30,
+      "f": 11,
+      "c": 57
+    },
+    {
+      "n": "piept de pui cu orez",
+      "a": [
+        "nuci"
+      ],
+      "kcal": 509,
+      "p": 20,
+      "f": 11,
+      "c": 62
+    },
+    {
+      "n": "tocana de legume",
+      "a": [],
+      "kcal": 339,
+      "p": 7,
+      "f": 9,
+      "c": 14
+    },
+    {
+      "n": "burger de pui",
+      "a": [
+        "arahide",
+        "ou"
+      ],
+      "kcal": 326,
+      "p": 44,
+      "f": 8,
+      "c": 24
+    },
+    {
+      "n": "pui la gratar cu salata",
+      "a": [
+        "ou"
+      ],
+      "kcal": 429,
+      "p": 8,
+      "f": 6,
+      "c": 57
+    },
+    {
+      "n": "quinoa cu legume",
+      "a": [],
+      "kcal": 105,
+      "p": 4,
+      "f": 4,
+      "c": 19
+    },
+    {
+      "n": "paste carbonara",
+      "a": [],
+      "kcal": 202,
+      "p": 25,
+      "f": 22,
+      "c": 73
+    },
+    {
+      "n": "salata cu ton",
+      "a": [
+        "ou"
+      ],
+      "kcal": 175,
+      "p": 2,
+      "f": 28,
+      "c": 47
+    },
+    {
+      "n": "salata caesar cu pui",
+      "a": [
+        "nuci"
+      ],
+      "kcal": 315,
+      "p": 31,
+      "f": 26,
+      "c": 67
+    },
+    {
+      "n": "quinoa cu legume",
+      "a": [
+        "ou"
+      ],
+      "kcal": 449,
+      "p": 5,
+      "f": 14,
+      "c": 21
+    },
+    {
+      "n": "piept de pui cu quinoa",
+      "a": [
+        "ou"
+      ],
+      "kcal": 325,
+      "p": 23,
+      "f": 20,
+      "c": 23
+    },
+    {
+      "n": "piept de pui cu orez",
+      "a": [],
+      "kcal": 467,
+      "p": 20,
+      "f": 28,
+      "c": 28
+    },
+    {
+      "n": "pui la gratar cu salata",
+      "a": [],
+      "kcal": 587,
+      "p": 25,
+      "f": 21,
+      "c": 19
+    },
+    {
+      "n": "somon cu orez",
+      "a": [],
+      "kcal": 351,
+      "p": 9,
+      "f": 14,
+      "c": 17
+    },
+    {
+      "n": "somon cu sparanghel",
+      "a": [],
+      "kcal": 202,
+      "p": 37,
+      "f": 6,
+      "c": 49
+    },
+    {
+      "n": "paste cu pui",
+      "a": [],
+      "kcal": 578,
+      "p": 23,
+      "f": 0,
+      "c": 39
+    },
+    {
+      "n": "somon cu sparanghel",
+      "a": [],
+      "kcal": 360,
+      "p": 13,
+      "f": 18,
+      "c": 54
+    },
+    {
+      "n": "orez cu ton",
+      "a": [],
+      "kcal": 105,
+      "p": 29,
+      "f": 20,
+      "c": 43
+    },
+    {
+      "n": "paste bolognese",
+      "a": [
+        "peste"
+      ],
+      "kcal": 480,
+      "p": 2,
+      "f": 10,
+      "c": 5
+    },
+    {
+      "n": "somon cu cartofi",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 340,
+      "p": 9,
+      "f": 26,
+      "c": 7
+    },
+    {
+      "n": "somon cu cartofi",
+      "a": [],
+      "kcal": 635,
+      "p": 20,
+      "f": 17,
+      "c": 18
+    },
+    {
+      "n": "paste cu pui",
+      "a": [],
+      "kcal": 602,
+      "p": 29,
+      "f": 24,
+      "c": 23
+    },
+    {
+      "n": "piept de pui cu quinoa",
+      "a": [
+        "nuci",
+        "soia"
+      ],
+      "kcal": 254,
+      "p": 3,
+      "f": 14,
+      "c": 56
+    },
+    {
+      "n": "burger de curcan",
+      "a": [],
+      "kcal": 438,
+      "p": 12,
+      "f": 0,
+      "c": 63
+    },
+    {
+      "n": "pui cu legume la wok",
+      "a": [
+        "nuci"
+      ],
+      "kcal": 543,
+      "p": 18,
+      "f": 8,
+      "c": 11
+    },
+    {
+      "n": "piept de pui cu quinoa",
+      "a": [
+        "peste",
+        "arahide"
+      ],
+      "kcal": 645,
+      "p": 32,
+      "f": 12,
+      "c": 34
+    },
+    {
+      "n": "salata cu pui",
+      "a": [
+        "arahide",
+        "lactoza"
+      ],
+      "kcal": 445,
+      "p": 17,
+      "f": 7,
+      "c": 26
+    },
+    {
+      "n": "paste bolognese",
+      "a": [
+        "ou"
+      ],
+      "kcal": 640,
+      "p": 14,
+      "f": 25,
+      "c": 48
+    },
+    {
+      "n": "burger de curcan",
+      "a": [
+        "soia"
+      ],
+      "kcal": 326,
+      "p": 24,
+      "f": 0,
+      "c": 74
+    },
+    {
+      "n": "tocana de pui",
+      "a": [],
+      "kcal": 150,
+      "p": 13,
+      "f": 2,
+      "c": 35
+    },
+    {
+      "n": "salata caesar cu pui",
+      "a": [
+        "nuci",
+        "lactoza"
+      ],
+      "kcal": 447,
+      "p": 45,
+      "f": 23,
+      "c": 76
+    },
+    {
+      "n": "burger de pui",
+      "a": [],
+      "kcal": 281,
+      "p": 43,
+      "f": 3,
+      "c": 23
+    },
+    {
+      "n": "salata greceasca",
+      "a": [],
+      "kcal": 501,
+      "p": 12,
+      "f": 4,
+      "c": 66
+    },
+    {
+      "n": "orez cu pui",
+      "a": [],
+      "kcal": 141,
+      "p": 11,
+      "f": 25,
+      "c": 48
+    },
+    {
+      "n": "quinoa cu pui",
+      "a": [
+        "peste"
+      ],
+      "kcal": 565,
+      "p": 33,
+      "f": 20,
+      "c": 6
+    },
+    {
+      "n": "tocana de legume",
+      "a": [],
+      "kcal": 325,
+      "p": 5,
+      "f": 21,
+      "c": 43
+    },
+    {
+      "n": "piept de pui cu quinoa",
+      "a": [
+        "peste"
+      ],
+      "kcal": 638,
+      "p": 39,
+      "f": 16,
+      "c": 39
+    },
+    {
+      "n": "burger de pui",
+      "a": [
+        "gluten",
+        "soia"
+      ],
+      "kcal": 112,
+      "p": 35,
+      "f": 3,
+      "c": 9
+    },
+    {
+      "n": "quinoa cu pui",
+      "a": [],
+      "kcal": 595,
+      "p": 15,
+      "f": 7,
+      "c": 56
+    },
+    {
+      "n": "burger de pui",
+      "a": [],
+      "kcal": 470,
+      "p": 3,
+      "f": 15,
+      "c": 17
+    },
+    {
+      "n": "paste carbonara",
+      "a": [],
+      "kcal": 121,
+      "p": 23,
+      "f": 13,
+      "c": 76
+    },
+    {
+      "n": "burger de pui",
+      "a": [],
+      "kcal": 592,
+      "p": 31,
+      "f": 16,
+      "c": 60
+    },
+    {
+      "n": "quinoa cu legume",
+      "a": [
+        "ou",
+        "nuci"
+      ],
+      "kcal": 375,
+      "p": 26,
+      "f": 6,
+      "c": 57
+    },
+    {
+      "n": "burger de pui",
+      "a": [],
+      "kcal": 260,
+      "p": 15,
+      "f": 14,
+      "c": 46
+    },
+    {
+      "n": "salata greceasca",
+      "a": [
+        "soia"
+      ],
+      "kcal": 463,
+      "p": 44,
+      "f": 0,
+      "c": 44
+    },
+    {
+      "n": "tocana de vita",
+      "a": [
+        "soia",
+        "ou"
+      ],
+      "kcal": 566,
+      "p": 27,
+      "f": 14,
+      "c": 31
+    },
+    {
+      "n": "orez cu ton",
+      "a": [
+        "nuci"
+      ],
+      "kcal": 516,
+      "p": 4,
+      "f": 4,
+      "c": 53
+    },
+    {
+      "n": "somon cu sparanghel",
+      "a": [],
+      "kcal": 190,
+      "p": 39,
+      "f": 19,
+      "c": 80
+    },
+    {
+      "n": "salata caesar cu pui",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 443,
+      "p": 25,
+      "f": 9,
+      "c": 61
+    },
+    {
+      "n": "wrap cu pui",
+      "a": [
+        "nuci",
+        "gluten"
+      ],
+      "kcal": 447,
+      "p": 31,
+      "f": 16,
+      "c": 58
+    },
+    {
+      "n": "orez cu pui",
+      "a": [
+        "arahide"
+      ],
+      "kcal": 346,
+      "p": 3,
+      "f": 20,
+      "c": 43
+    },
+    {
+      "n": "wrap cu ton",
+      "a": [],
+      "kcal": 606,
+      "p": 44,
+      "f": 10,
+      "c": 79
+    },
+    {
+      "n": "salata cu ton",
+      "a": [],
+      "kcal": 142,
+      "p": 37,
+      "f": 4,
+      "c": 37
+    },
+    {
+      "n": "salata cu ton",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 142,
+      "p": 4,
+      "f": 4,
+      "c": 74
+    },
+    {
+      "n": "quinoa cu pui",
+      "a": [
+        "nuci"
+      ],
+      "kcal": 497,
+      "p": 2,
+      "f": 4,
+      "c": 61
+    },
+    {
+      "n": "orez cu ton",
+      "a": [
+        "ou",
+        "peste"
+      ],
+      "kcal": 299,
+      "p": 15,
+      "f": 1,
+      "c": 52
+    }
+  ],
+  "cina": [
+    {
+      "n": "quinoa cu tofu",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 528,
+      "p": 30,
+      "f": 12,
+      "c": 70
+    },
+    {
+      "n": "legume la gratar",
+      "a": [
+        "ou"
+      ],
+      "kcal": 577,
+      "p": 38,
+      "f": 21,
+      "c": 9
+    },
+    {
+      "n": "salata cu ton si avocado",
+      "a": [
+        "nuci",
+        "soia"
+      ],
+      "kcal": 519,
+      "p": 16,
+      "f": 28,
+      "c": 37
+    },
+    {
+      "n": "tofu la wok",
+      "a": [],
+      "kcal": 563,
+      "p": 12,
+      "f": 23,
+      "c": 15
+    },
+    {
+      "n": "pui la gratar cu salata",
+      "a": [],
+      "kcal": 408,
+      "p": 34,
+      "f": 25,
+      "c": 40
+    },
+    {
+      "n": "supa de pui",
+      "a": [],
+      "kcal": 211,
+      "p": 5,
+      "f": 24,
+      "c": 60
+    },
+    {
+      "n": "salata cu somon",
+      "a": [
+        "gluten",
+        "arahide"
+      ],
+      "kcal": 94,
+      "p": 26,
+      "f": 8,
+      "c": 53
+    },
+    {
+      "n": "supa de rosii",
+      "a": [
+        "ou",
+        "arahide"
+      ],
+      "kcal": 313,
+      "p": 4,
+      "f": 18,
+      "c": 67
+    },
+    {
+      "n": "tofu cu orez",
+      "a": [
+        "arahide"
+      ],
+      "kcal": 525,
+      "p": 36,
+      "f": 18,
+      "c": 76
+    },
+    {
+      "n": "legume la cuptor",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 396,
+      "p": 10,
+      "f": 16,
+      "c": 39
+    },
+    {
+      "n": "somon la cuptor",
+      "a": [
+        "peste"
+      ],
+      "kcal": 300,
+      "p": 29,
+      "f": 28,
+      "c": 80
+    },
+    {
+      "n": "supa de rosii",
+      "a": [
+        "peste"
+      ],
+      "kcal": 524,
+      "p": 39,
+      "f": 18,
+      "c": 23
+    },
+    {
+      "n": "tofu cu legume",
+      "a": [],
+      "kcal": 203,
+      "p": 11,
+      "f": 11,
+      "c": 19
+    },
+    {
+      "n": "legume la gratar",
+      "a": [],
+      "kcal": 150,
+      "p": 17,
+      "f": 12,
+      "c": 17
+    },
+    {
+      "n": "omleta cu branza",
+      "a": [],
+      "kcal": 541,
+      "p": 42,
+      "f": 12,
+      "c": 79
+    },
+    {
+      "n": "somon cu legume",
+      "a": [
+        "nuci",
+        "ou"
+      ],
+      "kcal": 589,
+      "p": 3,
+      "f": 20,
+      "c": 71
+    },
+    {
+      "n": "somon cu legume",
+      "a": [
+        "soia"
+      ],
+      "kcal": 415,
+      "p": 27,
+      "f": 1,
+      "c": 10
+    },
+    {
+      "n": "salata cu pui",
+      "a": [
+        "ou"
+      ],
+      "kcal": 152,
+      "p": 42,
+      "f": 0,
+      "c": 47
+    },
+    {
+      "n": "supa de pui",
+      "a": [
+        "lactoza",
+        "nuci"
+      ],
+      "kcal": 299,
+      "p": 30,
+      "f": 8,
+      "c": 61
+    },
+    {
+      "n": "salata greceasca usoara",
+      "a": [],
+      "kcal": 504,
+      "p": 21,
+      "f": 20,
+      "c": 7
+    },
+    {
+      "n": "omleta cu branza",
+      "a": [],
+      "kcal": 282,
+      "p": 10,
+      "f": 29,
+      "c": 56
+    },
+    {
+      "n": "omleta cu legume",
+      "a": [],
+      "kcal": 526,
+      "p": 33,
+      "f": 21,
+      "c": 27
+    },
+    {
+      "n": "tofu cu orez",
+      "a": [
+        "nuci"
+      ],
+      "kcal": 270,
+      "p": 18,
+      "f": 0,
+      "c": 19
+    },
+    {
+      "n": "tofu la wok",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 329,
+      "p": 4,
+      "f": 14,
+      "c": 23
+    },
+    {
+      "n": "legume la gratar",
+      "a": [
+        "peste"
+      ],
+      "kcal": 507,
+      "p": 6,
+      "f": 4,
+      "c": 21
+    },
+    {
+      "n": "quinoa cu legume",
+      "a": [],
+      "kcal": 515,
+      "p": 24,
+      "f": 27,
+      "c": 42
+    },
+    {
+      "n": "tofu cu orez",
+      "a": [
+        "ou",
+        "gluten"
+      ],
+      "kcal": 165,
+      "p": 13,
+      "f": 16,
+      "c": 6
+    },
+    {
+      "n": "omleta cu branza",
+      "a": [],
+      "kcal": 428,
+      "p": 16,
+      "f": 29,
+      "c": 49
+    },
+    {
+      "n": "tofu la wok",
+      "a": [],
+      "kcal": 423,
+      "p": 29,
+      "f": 18,
+      "c": 16
+    },
+    {
+      "n": "somon cu legume",
+      "a": [],
+      "kcal": 170,
+      "p": 12,
+      "f": 0,
+      "c": 13
+    },
+    {
+      "n": "somon cu legume",
+      "a": [
+        "arahide"
+      ],
+      "kcal": 267,
+      "p": 23,
+      "f": 5,
+      "c": 35
+    },
+    {
+      "n": "salata cu somon",
+      "a": [
+        "arahide"
+      ],
+      "kcal": 364,
+      "p": 31,
+      "f": 27,
+      "c": 13
+    },
+    {
+      "n": "tofu cu orez",
+      "a": [],
+      "kcal": 524,
+      "p": 17,
+      "f": 25,
+      "c": 46
+    },
+    {
+      "n": "supa crema de legume",
+      "a": [],
+      "kcal": 271,
+      "p": 16,
+      "f": 10,
+      "c": 47
+    },
+    {
+      "n": "omleta cu branza",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 420,
+      "p": 31,
+      "f": 6,
+      "c": 66
+    },
+    {
+      "n": "pui la gratar cu salata",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 94,
+      "p": 24,
+      "f": 19,
+      "c": 57
+    },
+    {
+      "n": "tofu cu orez",
+      "a": [],
+      "kcal": 398,
+      "p": 17,
+      "f": 1,
+      "c": 72
+    },
+    {
+      "n": "legume la cuptor",
+      "a": [
+        "soia"
+      ],
+      "kcal": 298,
+      "p": 6,
+      "f": 11,
+      "c": 35
+    },
+    {
+      "n": "supa de rosii",
+      "a": [
+        "nuci",
+        "arahide"
+      ],
+      "kcal": 130,
+      "p": 21,
+      "f": 15,
+      "c": 15
+    },
+    {
+      "n": "omleta cu branza",
+      "a": [
+        "soia"
+      ],
+      "kcal": 388,
+      "p": 13,
+      "f": 14,
+      "c": 32
+    },
+    {
+      "n": "tofu cu legume",
+      "a": [
+        "soia",
+        "peste"
+      ],
+      "kcal": 404,
+      "p": 9,
+      "f": 22,
+      "c": 51
+    },
+    {
+      "n": "omleta cu branza",
+      "a": [
+        "peste"
+      ],
+      "kcal": 608,
+      "p": 3,
+      "f": 25,
+      "c": 18
+    },
+    {
+      "n": "tofu cu orez",
+      "a": [
+        "nuci"
+      ],
+      "kcal": 635,
+      "p": 15,
+      "f": 30,
+      "c": 28
+    },
+    {
+      "n": "salata greceasca usoara",
+      "a": [
+        "lactoza",
+        "nuci"
+      ],
+      "kcal": 594,
+      "p": 2,
+      "f": 21,
+      "c": 35
+    },
+    {
+      "n": "omleta cu branza",
+      "a": [
+        "nuci",
+        "peste"
+      ],
+      "kcal": 633,
+      "p": 15,
+      "f": 27,
+      "c": 60
+    },
+    {
+      "n": "omleta cu branza",
+      "a": [],
+      "kcal": 219,
+      "p": 45,
+      "f": 25,
+      "c": 28
+    },
+    {
+      "n": "salata cu somon",
+      "a": [
+        "nuci",
+        "ou"
+      ],
+      "kcal": 558,
+      "p": 35,
+      "f": 3,
+      "c": 51
+    },
+    {
+      "n": "omleta cu branza",
+      "a": [
+        "peste"
+      ],
+      "kcal": 299,
+      "p": 29,
+      "f": 3,
+      "c": 27
+    },
+    {
+      "n": "tofu cu legume",
+      "a": [],
+      "kcal": 647,
+      "p": 39,
+      "f": 15,
+      "c": 30
+    },
+    {
+      "n": "tofu la wok",
+      "a": [
+        "arahide"
+      ],
+      "kcal": 100,
+      "p": 41,
+      "f": 12,
+      "c": 73
+    },
+    {
+      "n": "legume la gratar",
+      "a": [],
+      "kcal": 279,
+      "p": 34,
+      "f": 0,
+      "c": 37
+    },
+    {
+      "n": "quinoa cu legume",
+      "a": [],
+      "kcal": 161,
+      "p": 44,
+      "f": 13,
+      "c": 65
+    },
+    {
+      "n": "legume la gratar",
+      "a": [],
+      "kcal": 537,
+      "p": 23,
+      "f": 28,
+      "c": 80
+    },
+    {
+      "n": "omleta cu branza",
+      "a": [
+        "gluten"
+      ],
+      "kcal": 536,
+      "p": 37,
+      "f": 0,
+      "c": 31
+    },
+    {
+      "n": "quinoa cu tofu",
+      "a": [
+        "gluten",
+        "nuci"
+      ],
+      "kcal": 100,
+      "p": 6,
+      "f": 10,
+      "c": 25
+    },
+    {
+      "n": "legume la gratar",
+      "a": [],
+      "kcal": 253,
+      "p": 34,
+      "f": 23,
+      "c": 23
+    },
+    {
+      "n": "tofu cu orez",
+      "a": [
+        "arahide",
+        "gluten"
+      ],
+      "kcal": 604,
+      "p": 14,
+      "f": 4,
+      "c": 10
+    },
+    {
+      "n": "somon cu legume",
+      "a": [],
+      "kcal": 572,
+      "p": 16,
+      "f": 9,
+      "c": 43
+    },
+    {
+      "n": "salata greceasca usoara",
+      "a": [
+        "soia",
+        "peste"
+      ],
+      "kcal": 511,
+      "p": 38,
+      "f": 6,
+      "c": 80
+    },
+    {
+      "n": "legume la cuptor",
+      "a": [],
+      "kcal": 506,
+      "p": 32,
+      "f": 24,
+      "c": 76
+    },
+    {
+      "n": "salata cu pui",
+      "a": [],
+      "kcal": 141,
+      "p": 44,
+      "f": 10,
+      "c": 79
+    },
+    {
+      "n": "somon la cuptor",
+      "a": [
+        "arahide"
+      ],
+      "kcal": 543,
+      "p": 9,
+      "f": 18,
+      "c": 66
+    },
+    {
+      "n": "salata cu somon",
+      "a": [
+        "peste",
+        "nuci"
+      ],
+      "kcal": 550,
+      "p": 40,
+      "f": 30,
+      "c": 11
+    },
+    {
+      "n": "somon la cuptor",
+      "a": [],
+      "kcal": 287,
+      "p": 8,
+      "f": 20,
+      "c": 16
+    },
+    {
+      "n": "quinoa cu legume",
+      "a": [
+        "soia"
+      ],
+      "kcal": 111,
+      "p": 11,
+      "f": 13,
+      "c": 56
+    },
+    {
+      "n": "omleta cu legume",
+      "a": [
+        "arahide",
+        "lactoza"
+      ],
+      "kcal": 485,
+      "p": 32,
+      "f": 21,
+      "c": 77
+    },
+    {
+      "n": "pui la gratar cu salata",
+      "a": [],
+      "kcal": 410,
+      "p": 27,
+      "f": 12,
+      "c": 18
+    },
+    {
+      "n": "supa crema de legume",
+      "a": [
+        "gluten",
+        "nuci"
+      ],
+      "kcal": 391,
+      "p": 40,
+      "f": 8,
+      "c": 79
+    },
+    {
+      "n": "salata greceasca usoara",
+      "a": [],
+      "kcal": 298,
+      "p": 22,
+      "f": 25,
+      "c": 39
+    },
+    {
+      "n": "somon cu legume",
+      "a": [
+        "lactoza",
+        "nuci"
+      ],
+      "kcal": 285,
+      "p": 5,
+      "f": 24,
+      "c": 29
+    },
+    {
+      "n": "tofu cu orez",
+      "a": [],
+      "kcal": 118,
+      "p": 6,
+      "f": 14,
+      "c": 8
+    },
+    {
+      "n": "pui la gratar cu salata",
+      "a": [],
+      "kcal": 591,
+      "p": 14,
+      "f": 8,
+      "c": 8
+    },
+    {
+      "n": "salata cu pui",
+      "a": [],
+      "kcal": 118,
+      "p": 28,
+      "f": 26,
+      "c": 11
+    },
+    {
+      "n": "quinoa cu tofu",
+      "a": [],
+      "kcal": 385,
+      "p": 24,
+      "f": 23,
+      "c": 60
+    },
+    {
+      "n": "legume la gratar",
+      "a": [],
+      "kcal": 630,
+      "p": 20,
+      "f": 5,
+      "c": 64
+    },
+    {
+      "n": "tofu cu orez",
+      "a": [
+        "peste"
+      ],
+      "kcal": 423,
+      "p": 19,
+      "f": 2,
+      "c": 66
+    },
+    {
+      "n": "salata cu somon",
+      "a": [],
+      "kcal": 444,
+      "p": 9,
+      "f": 21,
+      "c": 16
+    },
+    {
+      "n": "tofu cu legume",
+      "a": [
+        "gluten"
+      ],
+      "kcal": 112,
+      "p": 27,
+      "f": 20,
+      "c": 29
+    },
+    {
+      "n": "omleta cu legume",
+      "a": [],
+      "kcal": 459,
+      "p": 20,
+      "f": 12,
+      "c": 5
+    },
+    {
+      "n": "salata cu somon",
+      "a": [],
+      "kcal": 412,
+      "p": 30,
+      "f": 28,
+      "c": 37
+    },
+    {
+      "n": "salata cu pui",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 579,
+      "p": 2,
+      "f": 6,
+      "c": 7
+    },
+    {
+      "n": "quinoa cu tofu",
+      "a": [
+        "peste"
+      ],
+      "kcal": 635,
+      "p": 19,
+      "f": 8,
+      "c": 48
+    },
+    {
+      "n": "pui la gratar cu broccoli",
+      "a": [],
+      "kcal": 133,
+      "p": 21,
+      "f": 23,
+      "c": 34
+    },
+    {
+      "n": "omleta cu branza",
+      "a": [
+        "peste"
+      ],
+      "kcal": 201,
+      "p": 17,
+      "f": 21,
+      "c": 72
+    },
+    {
+      "n": "supa de pui",
+      "a": [
+        "nuci",
+        "ou"
+      ],
+      "kcal": 450,
+      "p": 37,
+      "f": 17,
+      "c": 30
+    },
+    {
+      "n": "supa de pui",
+      "a": [
+        "nuci"
+      ],
+      "kcal": 310,
+      "p": 27,
+      "f": 17,
+      "c": 31
+    },
+    {
+      "n": "salata cu ton si avocado",
+      "a": [
+        "arahide",
+        "soia"
+      ],
+      "kcal": 172,
+      "p": 2,
+      "f": 17,
+      "c": 17
+    },
+    {
+      "n": "supa de pui",
+      "a": [
+        "gluten"
+      ],
+      "kcal": 629,
+      "p": 38,
+      "f": 18,
+      "c": 20
+    },
+    {
+      "n": "tofu cu orez",
+      "a": [],
+      "kcal": 418,
+      "p": 40,
+      "f": 17,
+      "c": 10
+    },
+    {
+      "n": "somon cu legume",
+      "a": [],
+      "kcal": 373,
+      "p": 9,
+      "f": 28,
+      "c": 22
+    },
+    {
+      "n": "salata cu somon",
+      "a": [],
+      "kcal": 219,
+      "p": 30,
+      "f": 29,
+      "c": 29
+    },
+    {
+      "n": "omleta cu legume",
+      "a": [
+        "ou"
+      ],
+      "kcal": 573,
+      "p": 16,
+      "f": 18,
+      "c": 34
+    },
+    {
+      "n": "legume la gratar",
+      "a": [
+        "gluten",
+        "lactoza"
+      ],
+      "kcal": 209,
+      "p": 7,
+      "f": 13,
+      "c": 22
+    },
+    {
+      "n": "legume la gratar",
+      "a": [],
+      "kcal": 209,
+      "p": 32,
+      "f": 14,
+      "c": 78
+    },
+    {
+      "n": "salata greceasca usoara",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 174,
+      "p": 42,
+      "f": 17,
+      "c": 61
+    },
+    {
+      "n": "omleta cu legume",
+      "a": [
+        "soia",
+        "arahide"
+      ],
+      "kcal": 199,
+      "p": 18,
+      "f": 24,
+      "c": 16
+    },
+    {
+      "n": "quinoa cu tofu",
+      "a": [
+        "soia"
+      ],
+      "kcal": 243,
+      "p": 20,
+      "f": 21,
+      "c": 48
+    },
+    {
+      "n": "tofu cu orez",
+      "a": [],
+      "kcal": 451,
+      "p": 19,
+      "f": 22,
+      "c": 64
+    },
+    {
+      "n": "somon la cuptor",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 258,
+      "p": 31,
+      "f": 25,
+      "c": 25
+    },
+    {
+      "n": "somon cu legume",
+      "a": [],
+      "kcal": 524,
+      "p": 18,
+      "f": 24,
+      "c": 60
+    },
+    {
+      "n": "legume la cuptor",
+      "a": [
+        "soia",
+        "lactoza"
+      ],
+      "kcal": 489,
+      "p": 25,
+      "f": 13,
+      "c": 13
+    },
+    {
+      "n": "omleta cu legume",
+      "a": [],
+      "kcal": 267,
+      "p": 3,
+      "f": 26,
+      "c": 37
+    },
+    {
+      "n": "quinoa cu tofu",
+      "a": [
+        "nuci",
+        "gluten"
+      ],
+      "kcal": 256,
+      "p": 18,
+      "f": 12,
+      "c": 75
+    },
+    {
+      "n": "tofu cu orez",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 499,
+      "p": 25,
+      "f": 16,
+      "c": 70
+    },
+    {
+      "n": "supa de pui",
+      "a": [
+        "arahide",
+        "nuci"
+      ],
+      "kcal": 559,
+      "p": 17,
+      "f": 7,
+      "c": 63
+    },
+    {
+      "n": "tofu la wok",
+      "a": [],
+      "kcal": 412,
+      "p": 2,
+      "f": 20,
+      "c": 80
+    },
+    {
+      "n": "quinoa cu tofu",
+      "a": [
+        "gluten"
+      ],
+      "kcal": 188,
+      "p": 28,
+      "f": 23,
+      "c": 34
+    },
+    {
+      "n": "somon cu legume",
+      "a": [
+        "peste"
+      ],
+      "kcal": 614,
+      "p": 6,
+      "f": 15,
+      "c": 25
+    },
+    {
+      "n": "supa de rosii",
+      "a": [],
+      "kcal": 559,
+      "p": 37,
+      "f": 27,
+      "c": 54
+    },
+    {
+      "n": "tofu cu orez",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 198,
+      "p": 20,
+      "f": 16,
+      "c": 67
+    },
+    {
+      "n": "somon la cuptor",
+      "a": [
+        "gluten",
+        "nuci"
+      ],
+      "kcal": 167,
+      "p": 31,
+      "f": 16,
+      "c": 45
+    },
+    {
+      "n": "tofu cu legume",
+      "a": [],
+      "kcal": 121,
+      "p": 13,
+      "f": 29,
+      "c": 55
+    },
+    {
+      "n": "somon la cuptor",
+      "a": [],
+      "kcal": 353,
+      "p": 19,
+      "f": 10,
+      "c": 11
+    },
+    {
+      "n": "supa de pui",
+      "a": [
+        "soia",
+        "ou"
+      ],
+      "kcal": 120,
+      "p": 8,
+      "f": 2,
+      "c": 25
+    },
+    {
+      "n": "omleta cu legume",
+      "a": [],
+      "kcal": 103,
+      "p": 21,
+      "f": 13,
+      "c": 35
+    },
+    {
+      "n": "salata cu pui",
+      "a": [],
+      "kcal": 575,
+      "p": 6,
+      "f": 28,
+      "c": 65
+    },
+    {
+      "n": "somon cu legume",
+      "a": [
+        "soia"
+      ],
+      "kcal": 307,
+      "p": 32,
+      "f": 12,
+      "c": 26
+    },
+    {
+      "n": "quinoa cu legume",
+      "a": [
+        "ou"
+      ],
+      "kcal": 212,
+      "p": 26,
+      "f": 10,
+      "c": 5
+    },
+    {
+      "n": "somon la cuptor",
+      "a": [],
+      "kcal": 176,
+      "p": 21,
+      "f": 11,
+      "c": 63
+    },
+    {
+      "n": "supa de rosii",
+      "a": [
+        "soia",
+        "ou"
+      ],
+      "kcal": 436,
+      "p": 22,
+      "f": 29,
+      "c": 46
+    },
+    {
+      "n": "salata cu somon",
+      "a": [
+        "nuci",
+        "soia"
+      ],
+      "kcal": 139,
+      "p": 14,
+      "f": 2,
+      "c": 68
+    },
+    {
+      "n": "somon cu legume",
+      "a": [],
+      "kcal": 165,
+      "p": 13,
+      "f": 19,
+      "c": 6
+    },
+    {
+      "n": "quinoa cu legume",
+      "a": [],
+      "kcal": 231,
+      "p": 27,
+      "f": 23,
+      "c": 47
+    },
+    {
+      "n": "legume la gratar",
+      "a": [],
+      "kcal": 639,
+      "p": 5,
+      "f": 20,
+      "c": 56
+    },
+    {
+      "n": "somon la cuptor",
+      "a": [
+        "arahide"
+      ],
+      "kcal": 117,
+      "p": 25,
+      "f": 18,
+      "c": 36
+    },
+    {
+      "n": "supa crema de legume",
+      "a": [],
+      "kcal": 482,
+      "p": 31,
+      "f": 1,
+      "c": 22
+    },
+    {
+      "n": "legume la gratar",
+      "a": [
+        "ou"
+      ],
+      "kcal": 599,
+      "p": 8,
+      "f": 26,
+      "c": 65
+    },
+    {
+      "n": "somon la cuptor",
+      "a": [
+        "peste"
+      ],
+      "kcal": 536,
+      "p": 7,
+      "f": 26,
+      "c": 45
+    },
+    {
+      "n": "quinoa cu legume",
+      "a": [
+        "nuci",
+        "lactoza"
+      ],
+      "kcal": 165,
+      "p": 9,
+      "f": 9,
+      "c": 55
+    },
+    {
+      "n": "salata cu ton si avocado",
+      "a": [
+        "ou"
+      ],
+      "kcal": 523,
+      "p": 31,
+      "f": 5,
+      "c": 50
+    },
+    {
+      "n": "legume la cuptor",
+      "a": [],
+      "kcal": 361,
+      "p": 41,
+      "f": 9,
+      "c": 14
+    },
+    {
+      "n": "salata cu pui",
+      "a": [
+        "arahide",
+        "soia"
+      ],
+      "kcal": 141,
+      "p": 24,
+      "f": 10,
+      "c": 65
+    },
+    {
+      "n": "supa crema de legume",
+      "a": [
+        "gluten"
+      ],
+      "kcal": 536,
+      "p": 2,
+      "f": 18,
+      "c": 24
+    },
+    {
+      "n": "quinoa cu legume",
+      "a": [
+        "gluten",
+        "ou"
+      ],
+      "kcal": 577,
+      "p": 31,
+      "f": 15,
+      "c": 23
+    },
+    {
+      "n": "somon la cuptor",
+      "a": [
+        "lactoza",
+        "peste"
+      ],
+      "kcal": 603,
+      "p": 12,
+      "f": 15,
+      "c": 16
+    },
+    {
+      "n": "salata cu ton si avocado",
+      "a": [
+        "arahide"
+      ],
+      "kcal": 302,
+      "p": 12,
+      "f": 24,
+      "c": 16
+    },
+    {
+      "n": "somon cu legume",
+      "a": [],
+      "kcal": 249,
+      "p": 22,
+      "f": 7,
+      "c": 65
+    },
+    {
+      "n": "legume la cuptor",
+      "a": [],
+      "kcal": 507,
+      "p": 26,
+      "f": 22,
+      "c": 11
+    },
+    {
+      "n": "tofu cu orez",
+      "a": [
+        "gluten"
+      ],
+      "kcal": 575,
+      "p": 27,
+      "f": 9,
+      "c": 37
+    },
+    {
+      "n": "quinoa cu legume",
+      "a": [
+        "arahide",
+        "peste"
+      ],
+      "kcal": 345,
+      "p": 24,
+      "f": 17,
+      "c": 24
+    }
+  ],
+  "gustare": [
+    {
+      "n": "smoothie fructe",
+      "a": [
+        "gluten"
+      ],
+      "kcal": 320,
+      "p": 11,
+      "f": 25,
+      "c": 44
+    },
+    {
+      "n": "caju",
+      "a": [
+        "nuci",
+        "peste"
+      ],
+      "kcal": 297,
+      "p": 17,
+      "f": 11,
+      "c": 69
+    },
+    {
+      "n": "smoothie proteic",
+      "a": [],
+      "kcal": 447,
+      "p": 17,
+      "f": 17,
+      "c": 44
+    },
+    {
+      "n": "iaurt simplu",
+      "a": [
+        "arahide",
+        "lactoza"
+      ],
+      "kcal": 586,
+      "p": 28,
+      "f": 7,
+      "c": 29
+    },
+    {
+      "n": "mar cu unt de arahide",
+      "a": [],
+      "kcal": 282,
+      "p": 6,
+      "f": 9,
+      "c": 52
+    },
+    {
+      "n": "caju",
+      "a": [
+        "ou"
+      ],
+      "kcal": 597,
+      "p": 8,
+      "f": 12,
+      "c": 58
+    },
+    {
+      "n": "shake proteic cu banana",
+      "a": [],
+      "kcal": 361,
+      "p": 27,
+      "f": 9,
+      "c": 29
+    },
+    {
+      "n": "alune",
+      "a": [],
+      "kcal": 238,
+      "p": 31,
+      "f": 14,
+      "c": 78
+    },
+    {
+      "n": "smoothie fructe",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 608,
+      "p": 20,
+      "f": 24,
+      "c": 23
+    },
+    {
+      "n": "banana",
+      "a": [
+        "ou"
+      ],
+      "kcal": 607,
+      "p": 22,
+      "f": 0,
+      "c": 41
+    },
+    {
+      "n": "banana",
+      "a": [
+        "gluten"
+      ],
+      "kcal": 142,
+      "p": 9,
+      "f": 15,
+      "c": 62
+    },
+    {
+      "n": "portocala",
+      "a": [
+        "arahide"
+      ],
+      "kcal": 258,
+      "p": 25,
+      "f": 13,
+      "c": 69
+    },
+    {
+      "n": "banana cu unt de arahide",
+      "a": [
+        "ou",
+        "arahide"
+      ],
+      "kcal": 546,
+      "p": 38,
+      "f": 7,
+      "c": 66
+    },
+    {
+      "n": "baton proteic",
+      "a": [
+        "peste"
+      ],
+      "kcal": 134,
+      "p": 38,
+      "f": 12,
+      "c": 27
+    },
+    {
+      "n": "mar",
+      "a": [
+        "lactoza",
+        "soia"
+      ],
+      "kcal": 439,
+      "p": 27,
+      "f": 26,
+      "c": 46
+    },
+    {
+      "n": "portocala",
+      "a": [
+        "ou",
+        "arahide"
+      ],
+      "kcal": 485,
+      "p": 32,
+      "f": 22,
+      "c": 51
+    },
+    {
+      "n": "caju",
+      "a": [
+        "lactoza",
+        "peste"
+      ],
+      "kcal": 359,
+      "p": 14,
+      "f": 26,
+      "c": 40
+    },
+    {
+      "n": "protein shake",
+      "a": [],
+      "kcal": 308,
+      "p": 6,
+      "f": 5,
+      "c": 28
+    },
+    {
+      "n": "nuci mixte",
+      "a": [],
+      "kcal": 90,
+      "p": 25,
+      "f": 5,
+      "c": 63
+    },
+    {
+      "n": "mar",
+      "a": [],
+      "kcal": 201,
+      "p": 13,
+      "f": 23,
+      "c": 54
+    },
+    {
+      "n": "nuci mixte",
+      "a": [
+        "lactoza",
+        "soia"
+      ],
+      "kcal": 496,
+      "p": 14,
+      "f": 14,
+      "c": 74
+    },
+    {
+      "n": "caju",
+      "a": [
+        "soia",
+        "arahide"
+      ],
+      "kcal": 321,
+      "p": 2,
+      "f": 11,
+      "c": 9
+    },
+    {
+      "n": "smoothie fructe",
+      "a": [],
+      "kcal": 532,
+      "p": 21,
+      "f": 5,
+      "c": 38
+    },
+    {
+      "n": "granola bar",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 448,
+      "p": 42,
+      "f": 7,
+      "c": 15
+    },
+    {
+      "n": "mar",
+      "a": [],
+      "kcal": 280,
+      "p": 20,
+      "f": 3,
+      "c": 8
+    },
+    {
+      "n": "granola bar",
+      "a": [],
+      "kcal": 475,
+      "p": 4,
+      "f": 11,
+      "c": 80
+    },
+    {
+      "n": "mar cu unt de arahide",
+      "a": [
+        "gluten",
+        "soia"
+      ],
+      "kcal": 623,
+      "p": 22,
+      "f": 0,
+      "c": 41
+    },
+    {
+      "n": "iaurt grecesc",
+      "a": [],
+      "kcal": 322,
+      "p": 10,
+      "f": 8,
+      "c": 41
+    },
+    {
+      "n": "iaurt grecesc",
+      "a": [
+        "arahide",
+        "peste"
+      ],
+      "kcal": 583,
+      "p": 33,
+      "f": 9,
+      "c": 44
+    },
+    {
+      "n": "smoothie fructe",
+      "a": [
+        "nuci"
+      ],
+      "kcal": 507,
+      "p": 20,
+      "f": 21,
+      "c": 72
+    },
+    {
+      "n": "iaurt simplu",
+      "a": [],
+      "kcal": 200,
+      "p": 44,
+      "f": 27,
+      "c": 24
+    },
+    {
+      "n": "portocala",
+      "a": [],
+      "kcal": 144,
+      "p": 15,
+      "f": 20,
+      "c": 73
+    },
+    {
+      "n": "protein shake",
+      "a": [],
+      "kcal": 258,
+      "p": 45,
+      "f": 16,
+      "c": 77
+    },
+    {
+      "n": "smoothie fructe",
+      "a": [
+        "arahide",
+        "ou"
+      ],
+      "kcal": 597,
+      "p": 22,
+      "f": 20,
+      "c": 51
+    },
+    {
+      "n": "nuci mixte",
+      "a": [
+        "gluten"
+      ],
+      "kcal": 472,
+      "p": 15,
+      "f": 6,
+      "c": 17
+    },
+    {
+      "n": "migdale",
+      "a": [],
+      "kcal": 560,
+      "p": 33,
+      "f": 23,
+      "c": 53
+    },
+    {
+      "n": "smoothie proteic",
+      "a": [],
+      "kcal": 561,
+      "p": 41,
+      "f": 11,
+      "c": 80
+    },
+    {
+      "n": "caju",
+      "a": [],
+      "kcal": 525,
+      "p": 41,
+      "f": 16,
+      "c": 68
+    },
+    {
+      "n": "iaurt grecesc",
+      "a": [
+        "nuci",
+        "peste"
+      ],
+      "kcal": 107,
+      "p": 38,
+      "f": 15,
+      "c": 55
+    },
+    {
+      "n": "banana",
+      "a": [
+        "ou",
+        "arahide"
+      ],
+      "kcal": 102,
+      "p": 42,
+      "f": 12,
+      "c": 24
+    },
+    {
+      "n": "nuci mixte",
+      "a": [
+        "soia"
+      ],
+      "kcal": 317,
+      "p": 9,
+      "f": 30,
+      "c": 76
+    },
+    {
+      "n": "baton de cereale",
+      "a": [
+        "soia"
+      ],
+      "kcal": 502,
+      "p": 40,
+      "f": 30,
+      "c": 5
+    },
+    {
+      "n": "smoothie fructe",
+      "a": [
+        "arahide"
+      ],
+      "kcal": 331,
+      "p": 3,
+      "f": 23,
+      "c": 25
+    },
+    {
+      "n": "migdale",
+      "a": [],
+      "kcal": 351,
+      "p": 36,
+      "f": 5,
+      "c": 67
+    },
+    {
+      "n": "banana cu unt de arahide",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 150,
+      "p": 42,
+      "f": 8,
+      "c": 6
+    },
+    {
+      "n": "mandarina",
+      "a": [
+        "soia"
+      ],
+      "kcal": 259,
+      "p": 19,
+      "f": 10,
+      "c": 14
+    },
+    {
+      "n": "para",
+      "a": [
+        "gluten"
+      ],
+      "kcal": 297,
+      "p": 7,
+      "f": 18,
+      "c": 39
+    },
+    {
+      "n": "banana cu unt de arahide",
+      "a": [
+        "peste"
+      ],
+      "kcal": 154,
+      "p": 8,
+      "f": 20,
+      "c": 76
+    },
+    {
+      "n": "shake proteic cu banana",
+      "a": [],
+      "kcal": 447,
+      "p": 26,
+      "f": 6,
+      "c": 13
+    },
+    {
+      "n": "portocala",
+      "a": [
+        "ou"
+      ],
+      "kcal": 467,
+      "p": 43,
+      "f": 9,
+      "c": 35
+    },
+    {
+      "n": "iaurt grecesc",
+      "a": [],
+      "kcal": 526,
+      "p": 22,
+      "f": 15,
+      "c": 62
+    },
+    {
+      "n": "mar cu unt de arahide",
+      "a": [],
+      "kcal": 487,
+      "p": 13,
+      "f": 20,
+      "c": 19
+    },
+    {
+      "n": "iaurt simplu",
+      "a": [],
+      "kcal": 141,
+      "p": 44,
+      "f": 28,
+      "c": 24
+    },
+    {
+      "n": "portocala",
+      "a": [
+        "arahide"
+      ],
+      "kcal": 215,
+      "p": 25,
+      "f": 12,
+      "c": 63
+    },
+    {
+      "n": "banana",
+      "a": [],
+      "kcal": 444,
+      "p": 15,
+      "f": 15,
+      "c": 58
+    },
+    {
+      "n": "para",
+      "a": [],
+      "kcal": 209,
+      "p": 40,
+      "f": 21,
+      "c": 36
+    },
+    {
+      "n": "protein shake",
+      "a": [
+        "ou"
+      ],
+      "kcal": 367,
+      "p": 14,
+      "f": 19,
+      "c": 35
+    },
+    {
+      "n": "mar cu unt de arahide",
+      "a": [
+        "lactoza",
+        "nuci"
+      ],
+      "kcal": 570,
+      "p": 36,
+      "f": 14,
+      "c": 37
+    },
+    {
+      "n": "mandarina",
+      "a": [
+        "arahide"
+      ],
+      "kcal": 284,
+      "p": 33,
+      "f": 9,
+      "c": 66
+    },
+    {
+      "n": "banana cu unt de arahide",
+      "a": [],
+      "kcal": 90,
+      "p": 37,
+      "f": 16,
+      "c": 14
+    },
+    {
+      "n": "protein shake",
+      "a": [
+        "arahide"
+      ],
+      "kcal": 476,
+      "p": 36,
+      "f": 0,
+      "c": 66
+    },
+    {
+      "n": "caju",
+      "a": [
+        "gluten"
+      ],
+      "kcal": 299,
+      "p": 33,
+      "f": 12,
+      "c": 30
+    },
+    {
+      "n": "baton proteic",
+      "a": [
+        "soia"
+      ],
+      "kcal": 279,
+      "p": 18,
+      "f": 8,
+      "c": 68
+    },
+    {
+      "n": "banana cu unt de arahide",
+      "a": [
+        "nuci",
+        "lactoza"
+      ],
+      "kcal": 419,
+      "p": 4,
+      "f": 14,
+      "c": 57
+    },
+    {
+      "n": "portocala",
+      "a": [
+        "arahide"
+      ],
+      "kcal": 345,
+      "p": 9,
+      "f": 22,
+      "c": 33
+    },
+    {
+      "n": "protein shake",
+      "a": [
+        "lactoza",
+        "nuci"
+      ],
+      "kcal": 275,
+      "p": 26,
+      "f": 29,
+      "c": 67
+    },
+    {
+      "n": "nuci mixte",
+      "a": [
+        "arahide"
+      ],
+      "kcal": 165,
+      "p": 26,
+      "f": 18,
+      "c": 39
+    },
+    {
+      "n": "nuci mixte",
+      "a": [
+        "peste"
+      ],
+      "kcal": 135,
+      "p": 5,
+      "f": 3,
+      "c": 68
+    },
+    {
+      "n": "smoothie proteic",
+      "a": [],
+      "kcal": 325,
+      "p": 43,
+      "f": 29,
+      "c": 36
+    },
+    {
+      "n": "protein shake",
+      "a": [],
+      "kcal": 384,
+      "p": 5,
+      "f": 10,
+      "c": 32
+    },
+    {
+      "n": "iaurt simplu",
+      "a": [],
+      "kcal": 429,
+      "p": 44,
+      "f": 28,
+      "c": 54
+    },
+    {
+      "n": "alune",
+      "a": [],
+      "kcal": 188,
+      "p": 19,
+      "f": 18,
+      "c": 49
+    },
+    {
+      "n": "para",
+      "a": [
+        "soia"
+      ],
+      "kcal": 543,
+      "p": 35,
+      "f": 2,
+      "c": 17
+    },
+    {
+      "n": "mar cu unt de arahide",
+      "a": [],
+      "kcal": 278,
+      "p": 39,
+      "f": 23,
+      "c": 9
+    },
+    {
+      "n": "migdale",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 114,
+      "p": 3,
+      "f": 5,
+      "c": 18
+    },
+    {
+      "n": "smoothie fructe",
+      "a": [
+        "soia"
+      ],
+      "kcal": 167,
+      "p": 33,
+      "f": 26,
+      "c": 57
+    },
+    {
+      "n": "granola bar",
+      "a": [
+        "arahide",
+        "peste"
+      ],
+      "kcal": 493,
+      "p": 4,
+      "f": 3,
+      "c": 42
+    },
+    {
+      "n": "smoothie fructe",
+      "a": [],
+      "kcal": 576,
+      "p": 22,
+      "f": 26,
+      "c": 43
+    },
+    {
+      "n": "migdale",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 202,
+      "p": 14,
+      "f": 16,
+      "c": 37
+    },
+    {
+      "n": "alune",
+      "a": [],
+      "kcal": 232,
+      "p": 9,
+      "f": 3,
+      "c": 5
+    },
+    {
+      "n": "iaurt simplu",
+      "a": [
+        "ou",
+        "arahide"
+      ],
+      "kcal": 257,
+      "p": 33,
+      "f": 3,
+      "c": 34
+    },
+    {
+      "n": "iaurt grecesc",
+      "a": [
+        "ou"
+      ],
+      "kcal": 306,
+      "p": 45,
+      "f": 20,
+      "c": 78
+    },
+    {
+      "n": "smoothie fructe",
+      "a": [
+        "ou"
+      ],
+      "kcal": 472,
+      "p": 8,
+      "f": 2,
+      "c": 20
+    },
+    {
+      "n": "migdale",
+      "a": [
+        "lactoza"
+      ],
+      "kcal": 590,
+      "p": 33,
+      "f": 5,
+      "c": 41
+    },
+    {
+      "n": "mar cu unt de arahide",
+      "a": [
+        "peste"
+      ],
+      "kcal": 292,
+      "p": 2,
+      "f": 11,
+      "c": 55
+    },
+    {
+      "n": "para",
+      "a": [
+        "peste",
+        "soia"
+      ],
+      "kcal": 118,
+      "p": 5,
+      "f": 17,
+      "c": 39
+    },
+    {
+      "n": "nuci mixte",
+      "a": [],
+      "kcal": 243,
+      "p": 39,
+      "f": 10,
+      "c": 50
+    },
+    {
+      "n": "mandarina",
+      "a": [
+        "ou",
+        "soia"
+      ],
+      "kcal": 616,
+      "p": 31,
+      "f": 20,
+      "c": 49
+    },
+    {
+      "n": "portocala",
+      "a": [],
+      "kcal": 239,
+      "p": 21,
+      "f": 17,
+      "c": 35
+    },
+    {
+      "n": "caju",
+      "a": [
+        "nuci"
+      ],
+      "kcal": 240,
+      "p": 29,
+      "f": 0,
+      "c": 21
+    },
+    {
+      "n": "migdale",
+      "a": [
+        "soia"
+      ],
+      "kcal": 91,
+      "p": 25,
+      "f": 26,
+      "c": 27
+    },
+    {
+      "n": "smoothie fructe",
+      "a": [
+        "gluten"
+      ],
+      "kcal": 594,
+      "p": 40,
+      "f": 2,
+      "c": 74
+    },
+    {
+      "n": "mar cu unt de arahide",
+      "a": [
+        "peste"
+      ],
+      "kcal": 439,
+      "p": 38,
+      "f": 6,
+      "c": 57
+    },
+    {
+      "n": "iaurt grecesc",
+      "a": [
+        "peste",
+        "arahide"
+      ],
+      "kcal": 259,
+      "p": 9,
+      "f": 26,
+      "c": 58
+    },
+    {
+      "n": "mandarina",
+      "a": [],
+      "kcal": 189,
+      "p": 18,
+      "f": 24,
+      "c": 70
+    },
+    {
+      "n": "iaurt simplu",
+      "a": [],
+      "kcal": 420,
+      "p": 41,
+      "f": 27,
+      "c": 80
+    },
+    {
+      "n": "portocala",
+      "a": [],
+      "kcal": 271,
+      "p": 44,
+      "f": 24,
+      "c": 60
+    },
+    {
+      "n": "smoothie proteic",
+      "a": [],
+      "kcal": 594,
+      "p": 31,
+      "f": 12,
+      "c": 17
+    },
+    {
+      "n": "baton de cereale",
+      "a": [
+        "peste"
+      ],
+      "kcal": 609,
+      "p": 9,
+      "f": 13,
+      "c": 30
+    },
+    {
+      "n": "shake proteic cu banana",
+      "a": [
+        "peste",
+        "nuci"
+      ],
+      "kcal": 147,
+      "p": 14,
+      "f": 9,
+      "c": 21
+    }
+  ]
+}
